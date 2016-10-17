@@ -1,0 +1,87 @@
+// Create mixin (Twitter bootstrap standarts)
+@mixin respond-to($media) {
+  // Custom, iPhone Retina  custom col-xxs
+  @if $media == handhelds {
+    @media only screen and (min-width: 320px) and (max-width: 479px) {
+      @content;
+    }
+  }
+
+  @else if $media == wide-handhelds {
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+      @content;
+    }
+  }
+
+  @else if $media == tablets {
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      @content;
+    }
+  }
+
+  @else if $media == desktop {
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      @content;
+    }
+  }
+
+  @else if $media == wide-desktop {
+    @media only screen and (min-width: 1200px) {
+      @content;
+    }
+  }
+}
+
+@mixin browser($browsers: "Trident/7.0" "MSIE 10.0" "Chrome") {
+  @each $browser in $browsers {
+    html[data-browser*="#{$browser}"] & {
+      @content;
+    }
+  }
+}
+
+// //Example usage
+
+//   // For phones
+//   @include respond-to(handhelds) { float: none; };
+//   // For smartphones
+//   @include respond-to(wide-handhelds) { float: none; };
+//   // For tablets
+//   @include respond-to(tablets) { width: 240px; };
+// For crossbrowser(IE etc.)
+// @include browser(Android) {
+//   display: none;
+// }
+
+@function str-replace($string, $search, $replace: "") {
+  $index: str-index($string, $search);
+
+  @if $index {
+    @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+  }
+
+  @return $string;
+}
+
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff ttf otf) {
+  $src: null;
+
+  $extmods: (eot: "?", svg: "#" + str-replace($name, " ", "_"));
+
+  $formats: (otf: "opentype", ttf: "truetype");
+
+  @each $ext in $exts {
+    $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+    $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+    $src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+  }
+
+  @font-face {
+    font-family: quote($name);
+    font-style: $style;
+    font-weight: $weight;
+    src: $src;
+  }
+}
+
+/* Mixins included */

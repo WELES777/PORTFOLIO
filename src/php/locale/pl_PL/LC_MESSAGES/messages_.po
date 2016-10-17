@@ -1,0 +1,242 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: portfolio 1.0\n"
+"POT-Creation-Date: 2016-10-16 22:57+0200\n"
+"PO-Revision-Date: 2016-10-16 22:58+0200\n"
+"Last-Translator: \n"
+"Language-Team: I and my friend Me <www.www>\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.8\n"
+"X-Poedit-Basepath: ../../../..\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __\n"
+"X-Poedit-SearchPath-0: php\n"
+"X-Poedit-SearchPath-1: index.php\n"
+
+#: index.php:53
+msgid ""
+"Your browser does not support JavaScript!To tun it on use <a href='http://"
+"enable-javascript.com/'>this</a> instuction"
+msgstr ""
+"Obsługa javascript jest wyłączona, dla włączenia użyj <a href='http://enable-"
+"javascript.com/pl/'>tej</a>instukcji."
+
+#: php/mailer.php:28 php/opinions.php:26
+msgid ""
+"Oops! There was a problem with your submission. Please complete the form and "
+"try again."
+msgstr ""
+"Przetwarzanie dokumentu zakończone błędem. Proszę wypełnić formularz i "
+"spróbować ponownie"
+
+#: php/mailer.php:45 php/opinions.php:42
+msgid "Thank You! Your message has been sent."
+msgstr "Uprzejmie dziękuję! Wiadomość została odesłana"
+
+#: php/mailer.php:48 php/opinions.php:45
+msgid "Oops! Something went wrong and we couldn't send your message."
+msgstr ""
+"W trakcie odsyłania wystąpił błąd. Proszę zawiadomić właściciela o usterce."
+
+#: php/mailer.php:53 php/opinions.php:50
+msgid "There was a problem with your submission, please try again."
+msgstr "Wystąpił problem z przesłaniem, spróbuj ponownie"
+
+#~ msgid "Please leave opinion about this website portfolio"
+#~ msgstr "Proszę, zostaw opinie o tej witrynie portfolio. Z  góry dziękuję"
+
+#~ msgid "Your name "
+#~ msgstr "Twoje imię"
+
+#~ msgid "Your position"
+#~ msgstr "Twoje stanowisko"
+
+#~ msgid "Your opinion"
+#~ msgstr "Twoja opinia"
+
+#~ msgid "SEND"
+#~ msgstr "WYŚLIJ"
+
+#~ msgid "Welcome to my"
+#~ msgstr "Witam na moim"
+
+#~ msgid "Home"
+#~ msgstr "Home"
+
+#~ msgid "About"
+#~ msgstr "O mnie"
+
+#~ msgid "Skills"
+#~ msgstr "Umiejętonści"
+
+#~ msgid "Portfolio"
+#~ msgstr "Portfolio"
+
+#~ msgid "Contact me"
+#~ msgstr "Kontakt"
+
+#~ msgid "Follow me"
+#~ msgstr "Obserwuj mnie"
+
+#~ msgid "ABOUT<span> ME</span>"
+#~ msgstr "O<span> MNIE</span>"
+
+#~ msgid "Let me introduce myself"
+#~ msgstr "Pozwólcie mi, że się przedstawię"
+
+#~ msgid ""
+#~ "Hello there, I'm a beginner web developer. I'm learning front-end "
+#~ "development since the beginning of 2015, but my programming journey begun "
+#~ "much earlier in 2011 with C/C++ programing languages. New experiences and "
+#~ "challenges are my thing. I love spend time on learning new technologies "
+#~ "and inplementing them in my work. As regards my interests, my favorites "
+#~ "are recording audio books, translating, athletics and paragliding."
+#~ msgstr ""
+#~ "Cześć! Nazywam się  Vasyl Demianiuk. Jestem początkującym web "
+#~ "developerem. Uczę się technologii front-endu od prawie 2 lat, lecz swą "
+#~ "wędrówkę w programowaniu zacząłem przed czterema laty z językami "
+#~ "programowania C/C++. Sprawiają mi przyjemność nowe doświadczenia i "
+#~ "wyzwania, to też spędzam większość swego czasu na badanie nowych "
+#~ "technologii oraz ich praktyczny użytek. Co dotyczy moich zainteresowań "
+#~ "poza pracą, lubię czytać, nagrywać i tłumaczyć książki, zajmuję się lekką "
+#~ "atletyką oraz od czasu do czasu paralotniarstwem."
+
+#~ msgid ""
+#~ "Currently I'm completing my masters degree in Czestochowa University of "
+#~ "Technology, Institute of Computer Science, and looking for internship or/"
+#~ "and full stack job as Junior Front-End Web Developer & Junior JavaScript "
+#~ "Developer."
+#~ msgstr ""
+#~ "Obecnie kończę studia magisterskie na Politechnice Częstochowskiej "
+#~ "kierunek \"Informatyka\" i poszukuję stażu lub/oraz pracy stałej jako "
+#~ "Junior Front-End Web Developer & Junior JavaScript Developer."
+
+#~ msgid ""
+#~ "I'm looking for you, you're looking for me, let's <a data-toggle='modal' "
+#~ "data-target='#modal-wind' href='#''>find</a> each other."
+#~ msgstr ""
+#~ "Ja szukam was, wy szukacie mnie, <a data-toggle='modal' data-"
+#~ "target='#modal-wind' href='#''>odnajdziemy</a> siebie."
+
+#~ msgid "My credo:"
+#~ msgstr "Moje kredo:"
+
+#~ msgid ""
+#~ "Always code as if the guy who ends up maintaining your code will be a "
+#~ "violent psychopath who knows where you live."
+#~ msgstr ""
+#~ "Zawsze koduj tak, jak gdyby koleś, który przyjmie kod po tobie, będzie "
+#~ "brutalnym psychopatą, który wie,  gdzie mieszkasz."
+
+#~ msgid "Name:"
+#~ msgstr "Imię:"
+
+#~ msgid "Vasyl Demianiuk"
+#~ msgstr "Vasyl Demianiuk"
+
+#~ msgid "Age:"
+#~ msgstr "Wiek:"
+
+#~ msgid "23 years"
+#~ msgstr "23 lata"
+
+#~ msgid "Location:"
+#~ msgstr "Lokalizacja:"
+
+#~ msgid "Chestochowa, Poland, Earth"
+#~ msgstr "Częstochowa, Polska, Ziemia"
+
+#~ msgid "Status:"
+#~ msgstr "Status:"
+
+#~ msgid "Master"
+#~ msgstr "Magister"
+
+#~ msgid "CONTACT"
+#~ msgstr "KONTAKT"
+
+#~ msgid "Your name"
+#~ msgstr "Twoje imię"
+
+#~ msgid "Your email"
+#~ msgstr "Twój adres email"
+
+#~ msgid "Drop me a line"
+#~ msgstr "Napisz do mnie"
+
+#~ msgid "My <span>Skills</span>"
+#~ msgstr "Moje <span>Umiejętności</span>"
+
+#~ msgid "Everything is relative"
+#~ msgstr "Wszystko jest względne"
+
+#~ msgid "My <span>Works</span>"
+#~ msgstr "Moje <span>Prace</span>"
+
+#~ msgid ""
+#~ "There is no such thing as a boring project. There are only boring "
+#~ "executions"
+#~ msgstr "Nie ma takiej rzeczy jak marudny projekt jest tylko nudne wykonanie"
+
+#~ msgid "Advertising Park"
+#~ msgstr "Advertising Park"
+
+#~ msgid "Clothes shop"
+#~ msgstr "Clothes shop"
+
+#~ msgid "Computer Shop"
+#~ msgstr "Computer Shop"
+
+#~ msgid "Language Courses"
+#~ msgstr "Language Courses"
+
+#~ msgid "Telecom Shop"
+#~ msgstr "Telecom Shop"
+
+#~ msgid "More..."
+#~ msgstr "Więcej. . ."
+
+#~ msgid "... working on it"
+#~ msgstr ". . . pracuję nad tym"
+
+#~ msgid "Get <span>in touch</span>"
+#~ msgstr "Kontakt <span>ze mną</span>"
+
+#~ msgid "Name"
+#~ msgstr "Imię"
+
+#~ msgid "John Lennon"
+#~ msgstr "Jan Kowalski"
+
+#~ msgid "Email"
+#~ msgstr "Email"
+
+#~ msgid "email@example.com"
+#~ msgstr "email@example.com"
+
+#~ msgid "Message"
+#~ msgstr "Wiadomość"
+
+#~ msgid "Your message"
+#~ msgstr "Twoja wiadomość"
+
+#~ msgid "Download My Resume"
+#~ msgstr "Pobierz Moje CV"
+
+#~ msgid "&#64 COPYRIGHT 2016 - VASYL DEMIANIUK - ALL RIGHTS RESERVED"
+#~ msgstr "&#64 COPYRIGHT 2016 - VASYL DEMIANIUK - WSZYSTKIE PRAWA ZASTRZEŻONE"
+
+#~ msgid "Toggle navigation"
+#~ msgstr "Toggle navigation"
+
+#~ msgid ""
+#~ "My\n"
+#~ "                            <span>\n"
+#~ "                            Skills\n"
+#~ "                        </span>"
+#~ msgstr "Moje <span> Umiejętności</span>"

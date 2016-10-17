@@ -1,0 +1,6 @@
+# I left src/ for easier understanding of project manufacturing.
+# Some bower and npm component parts are not necessary to install
+# i'm just building  portfolio web page on top of my universal template
+bower_components/
+node_modules/
+.htaccess

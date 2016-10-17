@@ -1,0 +1,38 @@
+{
+  "name": "toStartRepo",
+  "authors": [
+    "WELES777 <vasia.wendetta@gmail.com>"
+  ],
+  "install": {
+    "path": {
+      "css": "src/style/vendor",
+      "scss": "src/style/vendor",
+      "js": "src/js/vendor"
+    }
+  },
+  "description": "temaplate including permanently jquery, bootstrap, angular",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {},
+  "dependencies": {
+    "jquery": "^3.1.0",
+    "normalize-css": "^4.2.0",
+    "bootstrap-sass": "^3.3.7",
+    "jquery-sticky": "sticky#^1.0.3",
+    "smooth-scroll": "https://github.com/cferdinandi/smooth-scroll.git#^10.1.0",
+    "aos": "^2.1.0",
+    "csshake": "^1.5.1",
+    "tooltipster": "^4.1.5",
+    "jquery-ui": "^1.12.1",
+    "bootstrap-formhelpers": "^2.3.0"
+  }
+}

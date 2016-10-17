@@ -1,0 +1,29 @@
+/* NEW section mixins */
+@import "partials/mixins";
+
+/* NEW section customVariables*/
+@import "partials/customVariables";
+
+/* NEW section jquery-ui-theme*/
+@import "../../bower_components/jquery-ui/themes/ui-darkness/jquery-ui";
+
+/* NEW section bootstrap*/
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+
+/* NEW section bootstrap*/
+@import "../../bower_components/bootstrap-formhelpers/dist/css/bootstrap-formhelpers";
+
+/* NEW section bootstrap */
+@import "../../bower_components/aos/dist/aos";
+
+/* NEW section bootstrap */
+@import "../../bower_components/csshake/scss/csshake";
+
+/* NEW section bootstrap */
+@import "../../bower_components/tooltipster/dist/css/tooltipster.bundle";
+
+/* NEW section app*/
+@import "partials/app";
+
+/* NEW section customVariables*/
+@import "partials/responsive";

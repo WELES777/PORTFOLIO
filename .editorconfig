@@ -1,0 +1,17 @@
+# editorconfig.org
+# best for using on sublimetext 3 (in my opinion)
+root = true
+
+[*]
+end_of_line = lf
+insert_final_newline = true
+charset = utf-8
+indent_size = 4
+indent_style = space
+trim_trailing_whitespace = true
+
+[*.{js,php,css}]
+charset = utf-8
+
+[*.md]
+trim_trailing_whitespace = false
