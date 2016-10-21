@@ -1,0 +1,29 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+
+/* TEAM */
+
+
+Your title: Vasyl Demaniuk.
+
+
+Site: www.vasyldemianiuk.com
+
+
+Facebook: Vasyl Demianiuk
+
+
+Location: Chestochowa, Poland.
+
+/* THANKS */
+
+Big thanks to creators of gulp build system
+
+/* SITE */
+
+Languages: HTML5, CSS3, JavaScript ES6, PHP 5.6
+
+Software: Chrome, FireFox, IE, SublimeText, Poedit, PS CC,
+OpenServer, for everything else used gulp.
+

@@ -44,6 +44,7 @@ var path = {
     img: 'src/img/**',
     fonts: 'src/fonts/**',
     php: 'src/php/*.php'
+
   },
   clean: './build'
 };
@@ -85,14 +86,7 @@ gulp.task('js:build', function() {
     .pipe(reload({ stream: true }));
 });
 
-// Include php
-gulp.task('php:build', function() {
-  gulp.src(path.src.php)
-    //.pipe(rigger())
-    // .pipe(uglify())
-    .pipe(gulp.dest(path.build.php))
-    .pipe(reload({ stream: true }));
-});
+
 
 // Puting all  SCSS files together
 gulp.task('style:build', function() {
@@ -151,6 +145,15 @@ gulp.task('build', [
   'image:build',
   'php:build'
 ]);
+
+// Include php
+gulp.task('php:build', function() {
+  gulp.src(path.src.php)
+    //.pipe(rigger())
+    // .pipe(uglify())
+    .pipe(gulp.dest(path.build.php))
+    .pipe(reload({ stream: true }));
+});
 
 
 

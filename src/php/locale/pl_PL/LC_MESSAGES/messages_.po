@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: portfolio 1.0\n"
-"POT-Creation-Date: 2016-10-16 22:57+0200\n"
-"PO-Revision-Date: 2016-10-16 22:58+0200\n"
+"POT-Creation-Date: 2016-10-21 03:52+0200\n"
+"PO-Revision-Date: 2016-10-21 03:53+0200\n"
 "Last-Translator: \n"
 "Language-Team: I and my friend Me <www.www>\n"
 "Language: pl\n"
@@ -10,23 +10,14 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.8.8\n"
-"X-Poedit-Basepath: ../../../..\n"
+"X-Poedit-Basepath: ../../..\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __\n"
-"X-Poedit-SearchPath-0: php\n"
-"X-Poedit-SearchPath-1: index.php\n"
+"X-Poedit-SearchPath-0: .\n"
 
-#: index.php:53
-msgid ""
-"Your browser does not support JavaScript!To tun it on use <a href='http://"
-"enable-javascript.com/'>this</a> instuction"
-msgstr ""
-"Obsługa javascript jest wyłączona, dla włączenia użyj <a href='http://enable-"
-"javascript.com/pl/'>tej</a>instukcji."
-
-#: php/mailer.php:28 php/opinions.php:26
+#: mailer.php:28 opinions.php:26
 msgid ""
 "Oops! There was a problem with your submission. Please complete the form and "
 "try again."
@@ -34,18 +25,25 @@ msgstr ""
 "Przetwarzanie dokumentu zakończone błędem. Proszę wypełnić formularz i "
 "spróbować ponownie"
 
-#: php/mailer.php:45 php/opinions.php:42
+#: mailer.php:56 opinions.php:50
 msgid "Thank You! Your message has been sent."
 msgstr "Uprzejmie dziękuję! Wiadomość została odesłana"
 
-#: php/mailer.php:48 php/opinions.php:45
+#: mailer.php:59 opinions.php:53
 msgid "Oops! Something went wrong and we couldn't send your message."
 msgstr ""
 "W trakcie odsyłania wystąpił błąd. Proszę zawiadomić właściciela o usterce."
 
-#: php/mailer.php:53 php/opinions.php:50
+#: mailer.php:64 opinions.php:58
 msgid "There was a problem with your submission, please try again."
 msgstr "Wystąpił problem z przesłaniem, spróbuj ponownie"
+
+#~ msgid ""
+#~ "Your browser does not support JavaScript!To tun it on use <a href='http://"
+#~ "enable-javascript.com/'>this</a> instuction"
+#~ msgstr ""
+#~ "Obsługa javascript jest wyłączona, dla włączenia użyj <a href='http://"
+#~ "enable-javascript.com/pl/'>tej</a>instukcji."
 
 #~ msgid "Please leave opinion about this website portfolio"
 #~ msgstr "Proszę, zostaw opinie o tej witrynie portfolio. Z  góry dziękuję"

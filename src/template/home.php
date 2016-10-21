@@ -2,7 +2,7 @@
 
  <!--  Language bar -->
 <!-- Not working -->
- <!--   <div class="bfh-selectbox bfh-languages" data-language="pl_PL" data-available="en_US,pl_PL" data-flags="true" data-blank="false">
+   <div class="bfh-selectbox bfh-languages" data-language="pl_PL" data-available="en_US,pl_PL" data-flags="true" data-blank="false">
     <input type="hidden" value="">
     <a class="bfh-selectbox-toggle" role="button" data-toggle="bfh-selectbox" href="#">
      <span class="bfh-selectbox-option input-medium" data-option=""></span>
@@ -12,16 +12,16 @@
      <div role="listbox">
       <ul role="option">
       <li><a href="/index.php?lang=pl_PL" data-option="pl_PL"><i class="glyphicon bfh-flag-PL"></i></a>
-        
+
       </li>
        <li><a href="/index.php?lang=en_US" data-option="en_US"><i class="glyphicon bfh-flag-US"></i></a>
-        
+
       </li>
             </ul>
      </div>
     </div>
    </div>
- --> 
+
 
  <div class="container">
   <div class="row">

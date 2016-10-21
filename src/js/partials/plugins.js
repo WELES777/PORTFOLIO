@@ -47,8 +47,17 @@
       }, 1000, "swing");
     });
 
+
+    // $("html").getNiceScroll().hide();
+
+
+
+
+
+
+
     //  Preloader
-   
+
     var minWidth = 480 // minimum width of screen
     if ($(window).width() <= minSize) {
       // do nothing

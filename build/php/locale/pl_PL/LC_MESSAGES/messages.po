@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: portfolio 1.0\n"
-"POT-Creation-Date: 2016-10-16 23:14+0200\n"
-"PO-Revision-Date: 2016-10-16 23:14+0200\n"
+"POT-Creation-Date: 2016-10-21 03:55+0200\n"
+"PO-Revision-Date: 2016-10-21 03:58+0200\n"
 "Last-Translator: \n"
 "Language-Team: I and my friend Me <www.www>\n"
 "Language: pl\n"
@@ -10,15 +10,16 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.8.8\n"
-"X-Poedit-Basepath: ../../../..\n"
+"X-Poedit-Basepath: ../..\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __\n"
-"X-Poedit-SearchPath-0: php\n"
-"X-Poedit-SearchPath-1: index.php\n"
+"X-Poedit-SearchPath-0: src/404.php\n"
+"X-Poedit-SearchPath-1: src/php\n"
+"X-Poedit-SearchPath-2: build/index.php\n"
 
-#: index.php:53
+#: build/index.php:58
 msgid ""
 "Your browser does not support JavaScript!To tun it on use <a href='http://"
 "enable-javascript.com/'>this</a> instuction"
@@ -26,63 +27,63 @@ msgstr ""
 "Obsługa javascript jest wyłączona, dla włączenia użyj <a href='http://enable-"
 "javascript.com/pl/'>tej</a>instukcji."
 
-#: index.php:94
+#: build/index.php:96
 msgid "Please leave opinion about this website portfolio"
 msgstr "Proszę, zostaw opinie o tej witrynie portfolio. Z  góry dziękuję"
 
-#: index.php:96 index.php:325
+#: build/index.php:98 build/index.php:327
 msgid "Your name"
 msgstr "Twoje imię"
 
-#: index.php:99
+#: build/index.php:101
 msgid "Your position"
 msgstr "Twoje stanowisko"
 
-#: index.php:102
+#: build/index.php:104
 msgid "Your opinion"
 msgstr "Twoja opinia"
 
-#: index.php:105 index.php:343 index.php:538
+#: build/index.php:107 build/index.php:345 build/index.php:541
 msgid "SEND"
 msgstr "WYŚLIJ"
 
-#: index.php:122
+#: build/index.php:124
 msgid "Welcome to my"
 msgstr "Witam na moim"
 
-#: index.php:212
+#: build/index.php:214
 msgid "Home"
 msgstr "Home"
 
-#: index.php:217
+#: build/index.php:219
 msgid "About"
 msgstr "O mnie"
 
-#: index.php:222
+#: build/index.php:224
 msgid "Skills"
 msgstr "Umiejętonści"
 
-#: index.php:227
+#: build/index.php:229
 msgid "Portfolio"
 msgstr "Portfolio"
 
-#: index.php:232
+#: build/index.php:234
 msgid "Contact me"
 msgstr "Kontakt"
 
-#: index.php:237 index.php:576
+#: build/index.php:239 build/index.php:579
 msgid "Follow me"
 msgstr "Obserwuj mnie"
 
-#: index.php:252
+#: build/index.php:254
 msgid "ABOUT<span> ME</span>"
 msgstr "O<span> MNIE</span>"
 
-#: index.php:256
+#: build/index.php:258
 msgid "Let me introduce myself"
 msgstr "Pozwólcie mi, że się przedstawię"
 
-#: index.php:262
+#: build/index.php:264
 msgid ""
 "Hello there, I'm a beginner web developer. I'm learning front-end "
 "development since the beginning of 2015, but my programming journey begun "
@@ -100,7 +101,7 @@ msgstr ""
 "tłumaczyć książki, zajmuję się lekką atletyką oraz od czasu do czasu "
 "paralotniarstwem."
 
-#: index.php:264
+#: build/index.php:266
 msgid ""
 "Currently I'm completing my masters degree in Czestochowa University of "
 "Technology, Institute of Computer Science, and looking for internship or/and "
@@ -111,7 +112,7 @@ msgstr ""
 "\"Informatyka\" i poszukuję stażu lub/oraz pracy stałej jako Junior Front-"
 "End Web Developer & Junior JavaScript Developer."
 
-#: index.php:265
+#: build/index.php:267
 msgid ""
 "I'm looking for you, you're looking for me, let's <a data-toggle='modal' "
 "data-target='#modal-wind' href='#''>find</a> each other."
@@ -119,11 +120,11 @@ msgstr ""
 "Ja szukam was, wy szukacie mnie, <a data-toggle='modal' data-target='#modal-"
 "wind' href='#''>odnajdziemy</a> siebie."
 
-#: index.php:266
+#: build/index.php:268
 msgid "My credo:"
 msgstr "Moje kredo:"
 
-#: index.php:268
+#: build/index.php:270
 msgid ""
 "Always code as if the guy who ends up maintaining your code will be a "
 "violent psychopath who knows where you live."
@@ -131,132 +132,140 @@ msgstr ""
 "Zawsze koduj tak, jak gdyby koleś, który przyjmie kod po tobie, będzie "
 "brutalnym psychopatą, który wie,  gdzie mieszkasz."
 
-#: index.php:281
+#: build/index.php:283
 msgid "Name:"
 msgstr "Imię:"
 
-#: index.php:285
+#: build/index.php:287
 msgid "Vasyl Demianiuk"
 msgstr "Vasyl Demianiuk"
 
-#: index.php:288
+#: build/index.php:290
 msgid "Age:"
 msgstr "Wiek:"
 
-#: index.php:292
+#: build/index.php:294
 msgid "23 years"
 msgstr "23 lata"
 
-#: index.php:295
+#: build/index.php:297
 msgid "Location:"
 msgstr "Lokalizacja:"
 
-#: index.php:299
+#: build/index.php:301
 msgid "Chestochowa, Poland, Earth"
 msgstr "Częstochowa, Polska, Ziemia"
 
-#: index.php:302
+#: build/index.php:304
 msgid "Status:"
 msgstr "Status:"
 
-#: index.php:306
+#: build/index.php:308
 msgid "Master"
 msgstr "Magister"
 
-#: index.php:320
+#: build/index.php:322
 msgid "CONTACT"
 msgstr "KONTAKT"
 
-#: index.php:328
+#: build/index.php:330
 msgid "Your email"
 msgstr "Twój adres email"
 
-#: index.php:331 index.php:512
+#: build/index.php:333 build/index.php:515
 msgid "Drop me a line"
 msgstr "Napisz do mnie"
 
-#: index.php:360
+#: build/index.php:362
 msgid "My <span>Skills</span>"
 msgstr "Moje <span>Umiejętności</span>"
 
-#: index.php:365
+#: build/index.php:367
 msgid "Everything is relative"
 msgstr "Wszystko jest względne"
 
-#: index.php:410
+#: build/index.php:412
 msgid "My <span>Works</span>"
 msgstr "Moje <span>Prace</span>"
 
-#: index.php:413
+#: build/index.php:415
 msgid ""
 "There is no such thing as a boring project. There are only boring executions"
 msgstr "Nie ma takiej rzeczy jak marudny projekt jest tylko nudne wykonanie"
 
-#: index.php:439
+#: build/index.php:441
 msgid "Advertising Park"
 msgstr "Advertising Park"
 
-#: index.php:450
+#: build/index.php:452
 msgid "Clothes shop"
 msgstr "Clothes shop"
 
-#: index.php:461
+#: build/index.php:464
 msgid "Computer Shop"
 msgstr "Computer Shop"
 
-#: index.php:472
+#: build/index.php:475
 msgid "Language Courses"
 msgstr "Language Courses"
 
-#: index.php:483
+#: build/index.php:486
 msgid "Telecom Shop"
 msgstr "Telecom Shop"
 
-#: index.php:492
+#: build/index.php:495
 msgid "More..."
 msgstr "Więcej. . ."
 
-#: index.php:497
+#: build/index.php:500
 msgid "... working on it"
 msgstr ". . . pracuję nad tym"
 
-#: index.php:509
+#: build/index.php:512
 msgid "Get <span>in touch</span>"
 msgstr "Kontakt <span>ze mną</span>"
 
-#: index.php:519
+#: build/index.php:522
 msgid "Name"
 msgstr "Imię"
 
-#: index.php:521
+#: build/index.php:524
 msgid "John Lennon"
 msgstr "Jan Kowalski"
 
-#: index.php:525
+#: build/index.php:528
 msgid "Email"
 msgstr "Email"
 
-#: index.php:527
+#: build/index.php:530
 msgid "email@example.com"
 msgstr "email@example.com"
 
-#: index.php:531
+#: build/index.php:534
 msgid "Message"
 msgstr "Wiadomość"
 
-#: index.php:533
+#: build/index.php:536
 msgid "Your message"
 msgstr "Twoja wiadomość"
 
-#: index.php:567
+#: build/index.php:570
 msgid "Download My Resume"
 msgstr "Pobierz Moje CV"
 
-#: index.php:603
+#: build/index.php:606
 msgid "&#64 COPYRIGHT 2016 - VASYL DEMIANIUK - ALL RIGHTS RESERVED"
 msgstr "&#64 COPYRIGHT 2016 - VASYL DEMIANIUK - WSZYSTKIE PRAWA ZASTRZEŻONE"
 
-#: php/mailer.php:28 php/opinions.php:26
+#: src/404.php:5 src/404.php:57
+msgid "Page Not Found"
+msgstr "Strona nie znaleziona"
+
+#: src/404.php:58
+msgid "Sorry, but the page you were trying to view does not exist."
+msgstr "404 strona o podanym adresie nie istnieje"
+
+#: src/php/mailer.php:28 src/php/opinions.php:26
 msgid ""
 "Oops! There was a problem with your submission. Please complete the form and "
 "try again."
@@ -264,16 +273,16 @@ msgstr ""
 "Przetwarzanie dokumentu zakończone błędem. Proszę wypełnić formularz i "
 "spróbować ponownie"
 
-#: php/mailer.php:45 php/opinions.php:42
+#: src/php/mailer.php:56 src/php/opinions.php:50
 msgid "Thank You! Your message has been sent."
 msgstr "Uprzejmie dziękuję! Wiadomość została odesłana"
 
-#: php/mailer.php:48 php/opinions.php:45
+#: src/php/mailer.php:59 src/php/opinions.php:53
 msgid "Oops! Something went wrong and we couldn't send your message."
 msgstr ""
 "W trakcie odsyłania wystąpił błąd. Proszę zawiadomić właściciela o usterce."
 
-#: php/mailer.php:53 php/opinions.php:50
+#: src/php/mailer.php:64 src/php/opinions.php:58
 msgid "There was a problem with your submission, please try again."
 msgstr "Wystąpił problem z przesłaniem, spróbuj ponownie"
 

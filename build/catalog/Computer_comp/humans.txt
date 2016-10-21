@@ -1,0 +1,23 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+                            
+/* TEAM */
+                            
+Your title: Vasyl Demaniuk.
+
+                            
+Site: vasia.wendetta@gmail.com, link to contact form etc.
+
+                            
+Facebook: Vasyl Demianiuk.
+
+                            
+Location: Chestochowa, Poland.
+
+
+/* SITE */
+
+                            
+Standards: HTML4, CSS2.1
+                            
+Software: Sublimetext 3, Firefox, Adobe Photoshop CC

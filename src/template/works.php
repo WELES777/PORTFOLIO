@@ -34,7 +34,7 @@
        <div class="after">
         <span><?php echo __("Advertising Park") ?></span>
         <a class="tooltip-custom disabled" data-tooltip-content="#icon1-content"><i class="fa fa-eye" aria-hidden="true" ></i></a>
-        <a href=""><i class="fa fa-external-link" aria-hidden="true"></i></a>
+        <a href="catalog/Advertising_park" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i></a>
         <a href="https://github.com/WELES777/Advertising_park.git" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
        </div>
       </div>
@@ -45,7 +45,7 @@
        <div class="after">
         <span><?php echo __("Clothes shop") ?></span>
         <a class="tooltip-custom disabled" data-tooltip-content="#icon2-content"><i class="fa fa-eye" aria-hidden="true"></i></a>
-        <a href=""><i class="fa fa-external-link" aria-hidden="true"></i></a>
+        <a href="catalog\Clothes_shop" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i></a>
         <a href= "https://github.com/WELES777/Clothes_shop.git" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
        </div>
       </div>
@@ -57,7 +57,7 @@
        <div class="after">
         <span><?php echo __("Computer Shop") ?></span>
         <a class="tooltip-custom disabled" data-tooltip-content="#icon3-content"><i class="fa fa-eye" aria-hidden="true"></i></a>
-        <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+        <a href="catalog\Computer_comp" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i></a>
         <a href="https://github.com/WELES777/Computer_comp.git" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
        </div>
       </div>
@@ -68,7 +68,7 @@
        <div class="after">
         <span><?php echo __("Language Courses") ?></span>
         <a class="tooltip-custom disabled" data-tooltip-content="#icon4-content"><i class="fa fa-eye" aria-hidden="true"></i></a>
-        <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+        <a href="catalog\LenKurs" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i></a>
         <a href="https://github.com/WELES777/LenKURS.git" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
        </div>
       </div>
@@ -79,7 +79,7 @@
        <div class="after">
         <span><?php echo __("Telecom Shop") ?></span>
         <a class="tooltip-custom disabled" data-tooltip-content="#icon5-content"><i class="fa fa-eye" aria-hidden="true"></i></a>
-        <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+        <a href="catalog\Tel_shop" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i></a>
         <a href="https://github.com/WELES777/Tes_shop.git" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
        </div>
       </div>

@@ -1,0 +1,268 @@
+body {
+	font-family: Arial, "Times New Roman", sans-serif;
+	padding: 28px 40px 0px 43px;
+	font-size: 12pt;
+}
+/**************************HEADER*********************/
+.clear {
+	clear: both;
+}
+#logo table {
+	width:100%;
+}
+#logo p {
+	margin:0;
+	font-style: italic;
+}
+.right {
+	text-align: right;
+}
+.grey {
+	color:#b6b4b4 ;
+}
+.green {
+	color:#87ac75 ;
+	font-weight: bold;
+}
+
+/**************************TOP MENU*********************/
+
+#tophead {
+	background-color: #538bc5;
+	overflow: hidden;
+	margin-top: 20px;
+}
+#tophead ul li {
+	float:left;
+	list-style:none;
+}
+#tophead ul {
+	margin: 0;
+	padding:0;
+}
+#tophead ul li a {
+	padding: 9px 20px;
+	text-decoration: none;
+	color: #fff;
+	font-size: 120%;
+	display: block;
+}
+#tophead ul li.active a, #tophead ul li a:hover {
+	background-color: #375c84;
+}
+.icon {
+float: right;
+margin: 8px;
+}
+
+/**************************CONTENT*********************/ 
+
+
+#content img{
+	width:100%;
+}
+.title1, .title2, .button {
+	position: absolute;
+	top:190px;
+	right: 70px;
+	/*position: relative;
+	top:-145px;*/
+	text-align: right;
+}
+.title1 {
+	margin:0;
+	font-size:200%;
+	color:#5390b4;
+}.title2 {
+	margin-top: 40px;
+	font-size:104%;
+	color:#87abbf;
+}
+.button a{
+	font-size:13pt;
+	color:#fff;
+	text-align: center;
+	padding: 6px 14px;
+	text-decoration: none;
+	position: absolute;
+	right: 2px;
+	top:70px;
+	width:100px;
+	background-color: #f28221;
+}
+
+/**************************CATEGORIES*********************/
+
+
+#submenu table{
+	width:100%;
+}
+.sleft {
+	float: left;
+}
+.sright {
+	float: right;
+}
+#submenu table .sleft a {
+	text-decoration: none;
+	background-color: #ededed;
+	padding:10px;
+	border:1px solid #dededd;
+	font-weight: bold;
+}
+.sleft .active , #submenu td a:hover{
+	background: #e2ecf4;
+	color:#3b638f;
+}
+.sright div input{
+	border: 3px solid #c5debb ;
+	padding:7px;
+	width:200px;
+	color:#218cc8;
+}
+.sright div {
+	margin-top: -8px;
+}
+.pan1 input {
+	margin-top: -12px;
+}
+.separator{
+	border-top: 1px dashed #b1c7de;
+	width:100%;
+	height: 1px;
+	margin: 15px 0px;
+}
+
+/**************************PRODUCTS*********************/
+
+
+.image {
+	text-align: center;
+	border: 1px solid #c5e2f3;
+	height: 100%;
+	margin-bottom: 8px;
+}
+#products img {
+	border: 9px solid #dfedf5;
+	width:270px;
+	height: 290px;
+	margin-bottom: -4px;
+}
+#products table {
+	width: 100%;
+}
+.middlerow img {
+	margin-left: -1px;
+	margin-right: -1px;
+}
+#products td {
+	font-weight: bold;
+	font-size: 13pt;
+	align-content: center;
+}
+.leftrow {
+	float: left;
+}
+.rightrow {
+	float: right;
+}
+.secondline {
+	top: 20px;
+	border-top: 1px solid black;
+}
+.titleshort {
+	color:#136392;
+}
+.underphoto, .underphoto1  {
+	color:#444445;
+}
+.underphoto span {
+	color:#4c9242;
+}
+.underphoto1 span {
+	float: right;
+	color:#676767;
+}
+.underphoto1  {
+	float: right;
+}
+
+/**************************CATEGORIES*********************/
+
+
+#pagemenu table {
+	width: 100%;
+	background-color: #dfedf5;
+	margin:17px 0px;
+}
+#pagemenu a {
+	text-decoration: none;
+	font-weight:bold;
+	color:#fff;
+}
+.previous a , .next a {
+	background-color: #218cc8;
+	padding: 14px;
+	margin:0px 15px;
+}
+ .previous a {
+ 	float:left;
+	background-color:#a5bfcf;
+	width: 20%;
+ }
+  .next a {
+ 	float:right;
+ 	width: 20%;
+ }
+ .pages  a {
+ 	padding: 14px 18px;
+ 	background-color: #218cc8;
+ }
+.pages td div{
+	text-align: center;
+	width: 15px;
+}
+.pages  a:hover , .next a:hover, .page1 a, .previous a:hover {
+	background-color:#125c87;
+}
+.pagetab {
+	border: 1px solid #c5e2f3;
+}
+
+/**************************FOOTER*********************/
+
+
+#footer table {
+	width:100%;
+	font-family: Verdana, "Times New Roman", sans-serif;
+	font-size: 80%;
+}
+#footer {
+	color:#4f858a;
+	margin:0;
+}
+.fleft p {
+	margin:0px ;
+	padding:0px;
+	font-size: 80%;
+}
+.fright {
+	float: right;
+}
+ .one  a, .two a, .three a, .last a{
+	text-decoration: none;
+	color:#4f858a;
+	padding-right: 7px;
+	padding-left: 2px;
+	border-right: 1px solid #4f858a;
+}
+.last a{
+	border-right: 0px ;
+	padding-right: 0px;
+}
+#footer table table {
+	width:auto;
+}
+#footer table td {
+	vertical-align: top;
+}

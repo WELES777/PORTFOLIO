@@ -23,12 +23,19 @@
 <meta name="msapplication-config" content="browserconfig.xml" />
 
     <meta name="description" content="Portfolio | Vasyl Demianiuk - Junior Web Developer, JavaScript Developer, PHP Developer">
+    <meta name="keywords" content="Developer, junior, PHP, ,JavaScript, Portfolio, Web">
+<meta name="author" content="Hege Refsnes">
     <meta name="distribution" content="global">
     <!--[if lt IE 9]>
-        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <script src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
       <![endif]-->
+      <!--[if IE]><link rel="shortcut icon" href="favicon.ico"><![endif]-->
+
+      <!-- Reloading firefox fix hidden problem -->
+      <link rel="shortcut icon" type="image/png" href="/favicon.ico"/>
+        <link rel="shortcut icon" type="image/png" href="//vasyldemianiuk.com/favicon.ico"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link type="text/plain" rel="author" href="http://vasyldemianiuk.com/humans.txt" />
+    <link type="text/plain" rel="author" href="//vasyldemianiuk.com/humans.txt" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
@@ -36,7 +43,7 @@
     <meta name="theme-color" content="#d9d9d9">
 
     <title>Vasyl Demianiuk - My PORTFOLIO</title>
-    <link href='http://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'>
 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">

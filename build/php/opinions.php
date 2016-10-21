@@ -11,23 +11,23 @@ $locale_fetch = new gettext_reader($locale_file);
     return $locale_fetch->translate($text);
 }
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-   
+
         $fname = strip_tags(trim($_POST["fname"]));
                 $fname = str_replace(array("\r","\n"),array(" "," "),$fname);
         $position = strip_tags(trim($_POST["position"]));
 				$position = str_replace(array("\r","\n"),array(" "," "),$position);
-        
+
         $opinion = trim($_POST["opinion"]);
 
-        
+
         if (empty($opinion) ) {
-       
+
             http_response_code(400);
            echo __("Oops! There was a problem with your submission. Please complete the form and try again.");
             exit;
         }
 
-     
+
         $recipient = "vasia.wendetta@gmail.com";
 
         $subject = "New opinion from $fname";
@@ -35,9 +35,17 @@ $locale_fetch = new gettext_reader($locale_file);
         $email_content = "Name: $fname\n";
         $email_content = "Position: $position\n";
         $email_content .= "Opinion:\n$opinion\n";
-        $email_headers = "From: $fname";
+        // To avoid spam we need to input all kind of creap in header
+        // or use gmail filters, that's not a solution
+        $headers = 'From: ' . $fname . "\r\n";
+        $headers .= 'To: ' . $recipient . "\r\n";
+        $headers .= 'MIME-Version: 1.0' ."\r\n";
+        $headers .= 'Content-Type: text/plain; charset=utf-8' . "\r\n";
+        $headers .= 'Content-Transfer-Encoding: 8bit'. "\n\r\n";
+        $headers .= "X-Mailer: php/ " . phpversion();
+        $headers .= $opinion . "\r\n";
 
-        if (mail($recipient, $subject, $email_content, $email_headers)) {
+        if (mail($recipient, $subject, $email_content, $headers)) {
             http_response_code(200);
              echo __("Thank You! Your message has been sent.");
         } else {

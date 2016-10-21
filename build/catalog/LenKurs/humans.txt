@@ -1,0 +1,29 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+                            
+/* TEAM */
+                            
+Your title: Vasyl Demaniuk.
+
+                            
+Site: vasia.wendetta@gmail.com, link to contact form etc.
+
+                            
+Facebook: Vasyl Demianiuk.
+
+                            
+Location: Chestochowa, Poland.
+
+	
+
+/* SITE */
+
+                            
+Standards: HTML5, CSS3,jQuery 1.11.2, JavaScript ES5, SASS 3.3.1
+
+                            
+Components: Animate, bootstrap, html5shiv, jquery, magnific, modernizr, owl, stellar, waypoints.
+
+                            
+Software: Firefox, Chrome, Sublime Text 3, Bourbon 4.2.0, Adobe Photoshop CC, Inkscape
