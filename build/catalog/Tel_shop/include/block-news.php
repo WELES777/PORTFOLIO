@@ -3,7 +3,7 @@
 ?>
 <div id="block-news">
 
-<center><img id="news-prev" src="/images/img-prev.png" /></center>
+<center><img id="news-prev" src="/catalog/Tel_shop/images/img-prev.png" /></center>
 
 
 <div id="newsticker">
@@ -16,7 +16,7 @@ If (mysqli_num_rows($result) > 0)
 {
 $row = mysqli_fetch_array($result);
  do
-{	
+{
 
 echo '
 <li>
@@ -28,15 +28,15 @@ echo '
 ';
 
 }
- while ($row = mysqli_fetch_array($result)); 
-} 
+ while ($row = mysqli_fetch_array($result));
+}
 ?>
 
 
 </ul>
 
 </div>
-<center><img id="news-next" src="/images/img-next.png" /></center>
+<center><img id="news-next" src="/catalog/Tel_shop/images/img-next.png" /></center>
 
 
 

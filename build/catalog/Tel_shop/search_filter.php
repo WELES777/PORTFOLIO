@@ -13,16 +13,16 @@ $type = clear_string($link, $_GET["type"]);
 
 <head>
   <meta http-equiv="content-type" content="text/html; charset=iso-8859-2" />
-    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+   <link href="css/reset.css" rel="stylesheet" type="text/css" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link href="trackbar/trackbar.css" rel="stylesheet" type="text/css" />
 
-    <script type="text/javascript" src="/js/jquery-1.8.2.min.js"></script>
-    <script type="text/javascript" src="/js/jcarousellite_1.0.1.js"></script>
-    <script type="text/javascript" src="/js/shop-script.js"></script>
-    <script type="text/javascript" src="/js/jquery.cookie.min.js"></script>
-    <script type="text/javascript" src="/trackbar/jquery.trackbar.js"></script>
-    <script type="text/javascript" src="/js/TextChange.js"></script>
+    <script type="text/javascript" src="/catalog/Tel_shop/js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="/catalog/Tel_shop/js/jcarousellite_1.0.1.js"></script>
+    <script type="text/javascript" src="/catalog/Tel_shop/js/shop-script.js"></script>
+    <script type="text/javascript" src="/catalog/Tel_shop/js/jquery.cookie.min.js"></script>
+    <script type="text/javascript" src="/catalog/Tel_shop/trackbar/jquery.trackbar.js"></script>
+    <script type="text/javascript" src="/catalog/Tel_shop/js/TextChange.js"></script>
 
   <title>Wyszukiwanie za parametrami </title>
 </head>
@@ -74,8 +74,8 @@ if (mysqli_num_rows($result) > 0) {
 <p id="nav-breadcrumbs"><a href="index.php" >Strona Główna</a> \ <span>Wszystkie towary</span></p>
 <ul id="options-list">
 <li>Rodzaj: </li>
-<li><img id="style-grid" src="/images/icon-grid.png" /></li>
-<li><img id="style-list" src="/images/icon-list.png" /></li>
+<li><img id="style-grid" src="/catalog/Tel_shop/images/icon-grid.png" /></li>
+<li><img id="style-list" src="/catalog/Tel_shop/images/icon-list.png" /></li>
 <li><a id="select-sort">' . $sort_name . '</a>
 <ul id="sorting-list">
 <li><a href="view_cat.php?' . $catlink . 'type=' . $type . '&sort=price-asc" >Od tanich do drogich</a></li>
@@ -105,7 +105,7 @@ if (mysqli_num_rows($result) > 0) {
             $width                = intval($ratio * $width);
             $height               = intval($ratio * $height);
         } else {
-            $img_path = "/images/no-image.png";
+            $img_path = "/catalog/Tel_shop/images/no-image.png";
             $width    = 110;
             $height   = 200;
         }
@@ -120,8 +120,8 @@ if (mysqli_num_rows($result) > 0) {
   </div>
   <p class="style-title-grid" ><a href="view_content.php?id='.$row["products_id"].'" >'.$row["title"].'</a></p>
   <ul class="reviews-and-counts-grid">
-  <li><img src="/images/eye-icon.png" /><p>' . $row["count"] . '</p></li>
-  <li><img src="/images/comment-icon.png" /><p>' . $count_reviews . '</p></li>
+  <li><img src="/catalog/Tel_shop/images/eye-icon.png" /><p>' . $row["count"] . '</p></li>
+  <li><img src="/catalog/Tel_shop/images/comment-icon.png" /><p>' . $count_reviews . '</p></li>
   </ul>
   <a class="add-cart-style-grid" tid="'.$row["products_id"].'"></a>
   <p class="style-price-grid" ><strong>' . $row["price"] . '</strong> zł.</p>
@@ -160,7 +160,7 @@ if (mysqli_num_rows($result) > 0) {
                 $width                = intval($ratio * $width);
                 $height               = intval($ratio * $height);
             } else {
-                $img_path = "/images/noimages80x70.png";
+                $img_path = "catalog/Tel_shop//admin/images/noimages80x70.png";
                 $width    = 80;
                 $height   = 70;
             }
@@ -175,8 +175,8 @@ if (mysqli_num_rows($result) > 0) {
   </div>
 
   <ul class="reviews-and-counts-list">
-  <li><img src="/images/eye-icon.png" /><p>' . $row["count"] . '</p></li>
-  <li><img src="/images/comment-icon.png" /><p>' . $count_reviews . '</p></li>
+  <li><img src="/catalog/Tel_shop/images/eye-icon.png" /><p>' . $row["count"] . '</p></li>
+  <li><img src="/catalog/Tel_shop/images/comment-icon.png" /><p>' . $count_reviews . '</p></li>
   </ul>
 
   <p class="style-title-list" ><a href="view_content.php?id='.$row["products_id"].'" >'.$row["title"].'</a></p>

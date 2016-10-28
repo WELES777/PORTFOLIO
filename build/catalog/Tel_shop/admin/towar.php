@@ -68,7 +68,7 @@ if (isset($msgerror)) {
                     $width                = intval($ratio * $width);
                     $height               = intval($ratio * $height);
                 } else {
-                    $img_path = "./images/no-image-90.png";
+                    $img_path = "/admin/images/no-image-90.png";
                     $width    = 90;
                     $height   = 164;
                 }

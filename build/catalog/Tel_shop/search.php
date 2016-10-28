@@ -50,14 +50,14 @@ switch ($sorting) {
     <link href="css/reset.css" rel="stylesheet" type="text/css" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link href="trackbar/trackbar.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="/js/jquery-1.8.2.min.js"></script>
-    <script type="text/javascript" src="/js/jcarousellite_1.0.1.js"></script>
-    <script type="text/javascript" src="/js/shop-script.js"></script>
-    <script type="text/javascript" src="/js/jquery.cookie.min.js"></script>
-    <script type="text/javascript" src="/trackbar/jquery.trackbar.js"></script>
-    <script type="text/javascript" src="/js/TextChange.js"></script>
 
-  <title>Поиск - <?php echo $search; ?></title>
+    <script type="text/javascript" src="/catalog/Tel_shop/js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="/catalog/Tel_shop/js/jcarousellite_1.0.1.js"></script>
+    <script type="text/javascript" src="/catalog/Tel_shop/js/shop-script.js"></script>
+    <script type="text/javascript" src="/catalog/Tel_shop/js/jquery.cookie.min.js"></script>
+    <script type="text/javascript" src="/catalog/Tel_shop/trackbar/jquery.trackbar.js"></script>
+    <script type="text/javascript" src="/catalog/Tel_shop/js/TextChange.js"></script>
+  <title>Wyszukaj - <?php echo $search; ?></title>
 </head>
 <body>
 <div id="block-body">
@@ -112,8 +112,8 @@ if (strlen($search) >= 3 && strlen($search) < 150) {
 <p id="nav-breadcrumbs"><a href="index.php" >Strona Główna</a> \ <span>Wyszukiwanie</span></p>
 <ul id="options-list">
 <li>Rodzaj: </li>
-<li><img id="style-grid" src="/images/icon-grid.png" /></li>
-<li><img id="style-list" src="/images/icon-list.png" /></li>
+<li><img id="style-grid" src="/catalog/Tel_shop/images/icon-grid.png" /></li>
+<li><img id="style-list" src="/catalog/Tel_shop/images/icon-list.png" /></li>
 <li>Sortować:</li>
 <li><a id="select-sort">' . $sort_name . '</a>
 <ul id="sorting-list">
@@ -147,7 +147,7 @@ if (strlen($search) >= 3 && strlen($search) < 150) {
                     $width                = intval($ratio * $width);
                     $height               = intval($ratio * $height);
                 } else {
-                    $img_path = "/images/no-image.png";
+                    $img_path = "/catalog/Tel_shop/images/no-image.png";
                     $width    = 110;
                     $height   = 200;
                 }
@@ -162,8 +162,8 @@ if (strlen($search) >= 3 && strlen($search) < 150) {
   </div>
   <p class="style-title-grid" ><a href="view_content.php?id='.$row["products_id"].'" >'.$row["title"].'</a></p>
   <ul class="reviews-and-counts-grid">
-  <li><img src="/images/eye-icon.png" /><p>' . $row["count"] . '</p></li>
-  <li><img src="/images/comment-icon.png" /><p>' . $count_reviews . '</p></li>
+  <li><img src="/catalog/Tel_shop/images/eye-icon.png" /><p>' . $row["count"] . '</p></li>
+  <li><img src="/catalog/Tel_shop/images/comment-icon.png" /><p>' . $count_reviews . '</p></li>
   </ul>
   <a class="add-cart-style-grid" tid="'.$row["products_id"].'" ></a>
   <p class="style-price-grid" ><strong>' . $row["price"] . '</strong> zł.</p>
@@ -203,7 +203,7 @@ if (strlen($search) >= 3 && strlen($search) < 150) {
                     $width                = intval($ratio * $width);
                     $height               = intval($ratio * $height);
                 } else {
-                    $img_path = "/images/noimages80x70.png";
+                    $img_path = "/catalog/Tel_shop/admin/images/noimages80x70.png";
                     $width    = 80;
                     $height   = 70;
                 }
@@ -218,8 +218,8 @@ if (strlen($search) >= 3 && strlen($search) < 150) {
   </div>
 
   <ul class="reviews-and-counts-list">
-  <li><img src="/images/eye-icon.png" /><p>' . $row["count"] . '</p></li>
-  <li><img src="/images/comment-icon.png" /><p>' . $count_reviews . '</p></li>
+  <li><img src="/catalog/Tel_shop/images/eye-icon.png" /><p>' . $row["count"] . '</p></li>
+  <li><img src="/catalog/Tel_shop/images/comment-icon.png" /><p>' . $count_reviews . '</p></li>
   </ul>
 
   <p class="style-title-list" ><a href="view_content.php?id='.$row["products_id"].'" >'.$row["title"].'</a></p>

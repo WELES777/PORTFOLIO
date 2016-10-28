@@ -18,15 +18,15 @@
 
 if ($_SESSION['auth'] == 'yes_auth')
 {
- 
- echo '<p id="auth-user-info" align="right"><img src="/images/user.png" />Cześć, '.$_SESSION['auth_name'].'!</p>';   
-    
+
+ echo '<p id="auth-user-info" align="right"><img src="/catalog/Tel_shop/images/user.png" />Cześć, '.$_SESSION['auth_name'].'!</p>';
+
 }else{
- 
-  echo '<p id="reg-auth-title" align="right"><a class="top-auth">Zaloguj</a><a href="registration.php">Rejestracja</a></p>';   
-    
+
+  echo '<p id="reg-auth-title" align="right"><a class="top-auth">Zaloguj</a><a href="registration.php">Rejestracja</a></p>';
+
 }
-	
+
 ?>
 
 
@@ -54,7 +54,7 @@ if ($_SESSION['auth'] == 'yes_auth')
 
 <p align="right" id="button-auth" ><a>Zaloguj</a></p>
 
-<p align="right" class="auth-loading"><img src="/images/loading.gif" /></p>
+<p align="right" class="auth-loading"><img src="/catalog/Tel_shop/images/loading.gif" /></p>
 
 </ul>
 </form>
@@ -65,7 +65,7 @@ if ($_SESSION['auth'] == 'yes_auth')
 <p id="message-remind" class="message-remind-success" ></p>
 <center><input type="text" id="remind-email" placeholder="Wasz E-mail" /></center>
 <p align="right" id="button-remind" ><a>Gotowe</a></p>
-<p align="right" class="auth-loading" ><img src="/images/loading.gif" /></p>
+<p align="right" class="auth-loading" ><img src="/catalog/Tel_shop/images/loading.gif" /></p>
 <p id="prev-auth">Wstecz</p>
 </div>
 
@@ -80,23 +80,23 @@ if ($_SESSION['auth'] == 'yes_auth')
 <div id="block-user" >
 <div class="corner2"></div>
 <ul>
-<li><img src="/images/user_info.png" /><a href="profile.php">Profil</a></li>
-<li><img src="/images/logout.png" /><a id="logout" >Wyloguj</a></li>
+<li><img src="/catalog/Tel_shop/images/user_info.png" /><a href="profile.php">Profil</a></li>
+<li><img src="/catalog/Tel_shop/images/logout.png" /><a id="logout" >Wyloguj</a></li>
 </ul>
 </div>
 
 
 
-<img id="img-logo" src="/images/logo.png" />
+<img id="img-logo" src="/catalog/Tel_shop/images/logo.png" />
 
 <div id="personal-info">
 <p align="right">Skontaktuj się z nami</p>
 <h3 align="right">812 258 633</h3>
- <img src="/images/phone-icon.png" />
+ <img src="/catalog/Tel_shop/images/phone-icon.png" />
 <p align="right">Godziny otwarcia:</p>
 <p align="right">Poniedziałek - Sobota: 8:00 - 21:00</p>
 <p align="right">Niedziela: 9:00 - 19:00</p>
- <img src="/images/time-icon.png" />
+ <img src="/catalog/Tel_shop/images/time-icon.png" />
 </div>
 
 <div id="block-search">
@@ -116,11 +116,11 @@ if ($_SESSION['auth'] == 'yes_auth')
 
 <div id="top-menu">
 <ul>
-<li><img src="/images/shop.png" /><a href="index.php">Strona główna</a></li>
-<li><img src="/images/new-32.png" /><a href="view_aystopper.php?go=news">Nowości</a></li>
-<li><img src="/images/bestprice-32.png" /><a href="view_aystopper.php?go=leaders">Lider sprzedaż</a></li>
-<li><img src="/images/sale-32.png" /><a href="view_aystopper.php?go=sale">Wyprzedaż</a></li>
+<li><img src="/catalog/Tel_shop/images/shop.png" /><a href="index.php">Strona główna</a></li>
+<li><img src="/catalog/Tel_shop/images/new-32.png" /><a href="view_aystopper.php?go=news">Nowości</a></li>
+<li><img src="/catalog/Tel_shop/images/bestprice-32.png" /><a href="view_aystopper.php?go=leaders">Lider sprzedaż</a></li>
+<li><img src="/catalog/Tel_shop/images/sale-32.png" /><a href="view_aystopper.php?go=sale">Wyprzedaż</a></li>
 </ul>
-<p align="right" id="block-basket"><img src="/images/cart-icon.png" /><a href="cart.php?action=oneclick" >Koszyk pusty</a></p>
+<p align="right" id="block-basket"><img src="/catalog/Tel_shop/images/cart-icon.png" /><a href="cart.php?action=oneclick" >Koszyk pusty</a></p>
 <div id="nav-line"></div>
 </div>

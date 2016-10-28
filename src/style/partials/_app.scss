@@ -957,9 +957,25 @@ header {
 }
 
 #copyright {
+  position: relative;
   font: 10px $regular;
   width: 100%;
   background-color: #202121;
+  overflow: hidden;
+
+  // @include browser(Chrome) {
+  //   .fb_iframe_widget {
+  //     position: absolute;
+  //     right: -310px;
+  //     top: 7px;
+  //   }
+  // }
+
+  .fb_iframe_widget {
+    position: absolute;
+    right: -310px;
+    top: 7px;
+  }
 
   p {
     margin-top: 10px;

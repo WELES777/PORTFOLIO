@@ -12,8 +12,6 @@ function __($text){
     global $locale_fetch;
     return $locale_fetch->translate($text);
 }
-
-
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $name = strip_tags(trim($_POST["name"]));
@@ -50,6 +48,8 @@ function __($text){
         $header.= "X-Priority: 1\r\n";
         $header.= "X-Mailer: PHP/" . phpversion();
         $headers .= $message . "\r\n";
+
+
 
         if (mail($recipient, $subject, $email_content, $headers)) {
             http_response_code(200);

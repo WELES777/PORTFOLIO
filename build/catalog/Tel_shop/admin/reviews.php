@@ -103,7 +103,7 @@ if (isset($msgerror)) {
     if ($page > $total) {
         $page = $total;
     }
-    
+
     $start = $page * $num - $num;
     $result = mysqli_query($link, "SELECT * FROM table_reviews,table_products WHERE table_products.products_id = table_reviews.products_id ORDER BY $sort LIMIT $start, $num");
     if (mysqli_num_rows($result) > 0) {
@@ -136,8 +136,8 @@ if (isset($msgerror)) {
  </div>
 <p class="author-date"><strong>' . $row["name"] . '</strong>, ' . $row["date"] . '</p>
 <div class="plus-minus">
-            <img src="./images/plus16.png"/><p>' . $row["good_reviews"] . '</p>
-            <img src="./images/minus16.png"/><p>' . $row["bad_reviews"] . '</p>
+            <img src="/admin/images/plus16.png"/><p>' . $row["good_reviews"] . '</p>
+            <img src="/admin/images/minus16.png"/><p>' . $row["bad_reviews"] . '</p>
 </div>
 <p class="reviews-comment" >' . $row["comment"] . '</p>
  <p class="links-actions" align="right" >' . $link_accept . '<a class="delete" rel="reviews.php?id=' . $row["reviews_id"] . '&action=delete" >Usunąć</a> </p>

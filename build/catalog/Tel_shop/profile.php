@@ -3,31 +3,31 @@ define('included', true);
 session_start();
 
 if ($_SESSION['auth'] == 'yes_auth')
-{	
+{
    include("include/db_connect.php");
    include("functions/functions.php");
- 
+
    if ($_POST["save_submit"])
      {
-        
+
     $_POST["info_surname"] = clear_string($link,$_POST["info_surname"]);
     $_POST["info_name"] = clear_string($link,$_POST["info_name"]);
     $_POST["info_address"] = clear_string($link,$_POST["info_address"]);
     $_POST["info_phone"] = clear_string($link,$_POST["info_phone"]);
-    $_POST["info_email"] = clear_string($link,$_POST["info_email"]);     
-              
+    $_POST["info_email"] = clear_string($link,$_POST["info_email"]);
+
     $error = array();
-	
+
     $pass   = md5($_POST["info_pass"]);
     $pass   = strrev($pass);
     $pass   = "9nm2rv8q".$pass."2yo6z";
-    
+
 	if($_SESSION['auth_pass'] != $pass)
 	{
 		$error[]='Nieprawidłowe hasło!';
 	}else
     {
-        
+
       if($_POST["info_new_pass"] != "")
 	{
 		        if(strlen($_POST["info_new_pass"]) < 7 || strlen($_POST["info_new_pass"]) > 15)
@@ -41,64 +41,64 @@ if ($_SESSION['auth'] == 'yes_auth')
                      $newpassquery = "pass='".$newpass."',";
                 }
 	}
-    
-    
-    
+
+
+
         if(strlen($_POST["info_surname"]) < 3 || strlen($_POST["info_surname"]) > 15)
 	{
 		$error[]='Podaj nazwisko od 3 do 15 symboli!';
 	}
-    
-    
+
+
         if(strlen($_POST["info_name"]) < 3 || strlen($_POST["info_name"]) > 15)
 	{
 		$error[]='Podaj imię od 3 do 15 symboli!';
 	}
-    
-    
-           
+
+
+
         if(!preg_match("/^(?:[a-z0-9]+(?:[-_.]?[a-z0-9]+)?@[a-z0-9_.-]+(?:\.?[a-z0-9]+)?\.[a-z]{2,5})$/i",trim($_POST["info_email"])))
 	{
 		$error[]='Podaj poprawny email!';
 	}
-    
+
       if(strlen($_POST["info_phone"]) == "")
 	{
 		$error[]='Podaj numer telefonu!';
-	} 
-    
+	}
+
       if(strlen($_POST["info_address"]) == "")
 	{
 		$error[]='Podaj adres dostawy!';
-	}      
-    
-    
-        
+	}
+
+
+
     }
-    
+
   if(count($error))
 	{
 		$_SESSION['msg'] = "<p align='left' id='form-error'>".implode('<br />',$error)."</p>";
 	}else
     {
         $_SESSION['msg'] = "<p align='left' id='form-success'>Dane poprawnie zapisane!</p>";
-           
-     $dataquery = $newpassquery."surname='".$_POST["info_surname"]."',name='".$_POST["info_name"]."',email='".$_POST["info_email"]."',phone='".$_POST["info_phone"]."',address='".$_POST["info_address"]."'";      
+
+     $dataquery = $newpassquery."surname='".$_POST["info_surname"]."',name='".$_POST["info_name"]."',email='".$_POST["info_email"]."',phone='".$_POST["info_phone"]."',address='".$_POST["info_address"]."'";
      $update = mysqli_query($link, "UPDATE reg_user SET $dataquery WHERE login = '{$_SESSION['auth_login']}'");
-      
-    if ($newpass){ $_SESSION['auth_pass'] = $newpass; } 
-    
-    
+
+    if ($newpass){ $_SESSION['auth_pass'] = $newpass; }
+
+
     $_SESSION['auth_surname'] = $_POST["info_surname"];
     $_SESSION['auth_name'] = $_POST["info_name"];
     $_SESSION['auth_address'] = $_POST["info_address"];
     $_SESSION['auth_phone'] = $_POST["info_phone"];
-    $_SESSION['auth_email'] = $_POST["info_email"];    
-        
+    $_SESSION['auth_email'] = $_POST["info_email"];
+
     }
-        
-     }  
-   
+
+     }
+
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
@@ -108,26 +108,26 @@ if ($_SESSION['auth'] == 'yes_auth')
     <link href="css/reset.css" rel="stylesheet" type="text/css" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link href="trackbar/trackbar.css" rel="stylesheet" type="text/css" />
-    
-    <script type="text/javascript" src="/js/jquery-1.8.2.min.js"></script> 
-    <script type="text/javascript" src="/js/jcarousellite_1.0.1.js"></script> 
-    <script type="text/javascript" src="/js/shop-script.js"></script>
-    <script type="text/javascript" src="/js/jquery.cookie.min.js"></script>
-    <script type="text/javascript" src="/trackbar/jquery.trackbar.js"></script>
-    <script type="text/javascript" src="/js/TextChange.js"></script>
-    
+
+    <script type="text/javascript" src="/catalog/Tel_shop/js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="/catalog/Tel_shop/js/jcarousellite_1.0.1.js"></script>
+    <script type="text/javascript" src="/catalog/Tel_shop/js/shop-script.js"></script>
+    <script type="text/javascript" src="/catalog/Tel_shop/js/jquery.cookie.min.js"></script>
+    <script type="text/javascript" src="/catalog/Tel_shop/trackbar/jquery.trackbar.js"></script>
+    <script type="text/javascript" src="/catalog/Tel_shop/js/TextChange.js"></script>
+
 	<title>Sklep internetowy sprzętu telekomunikacyjnego</title>
 </head>
 <body>
 <div id="block-body">
-<?php	
-    include("include/block-header.php");    
+<?php
+    include("include/block-header.php");
 ?>
 <div id="block-right">
-<?php	
-    include("include/block-category.php");  
-    include("include/block-parameter.php");  
-    include("include/block-news.php"); 
+<?php
+    include("include/block-category.php");
+    include("include/block-parameter.php");
+    include("include/block-news.php");
 ?>
 </div>
 <div id="block-content">
@@ -135,13 +135,13 @@ if ($_SESSION['auth'] == 'yes_auth')
 <h3 class="title-h3" >Zmiana profilu</h3>
 
 <?php
-	
+
     if($_SESSION['msg'])
 		{
 		echo $_SESSION['msg'];
 		unset($_SESSION['msg']);
 		}
-    
+
 ?>
 
 <form method="post">
@@ -197,13 +197,13 @@ if ($_SESSION['auth'] == 'yes_auth')
 
 </div>
 
-<?php	
-    include("include/block-footer.php");    
+<?php
+    include("include/block-footer.php");
 ?>
 </div>
 
 </body>
 </html>
 <?php
-} else { header("Location: index.php");  }	
+} else { header("Location: index.php");  }
 ?>

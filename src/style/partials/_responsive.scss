@@ -2,10 +2,11 @@
   //-- Put your IE specific css class here
 }
 
-/* 
-    #ie10,11 will only be red in MSIE 10, 
-    both in high contrast (display setting) and default mode 
+/*
+    #ie10,11 will only be red in MSIE 10,
+    both in high contrast (display setting) and default mode
 */
+
 /* IE styles  included */
 
 // 320-479
@@ -112,7 +113,8 @@
       height: auto;
 
       & > p:first-child {
-        &:after, &:before {
+        &:after,
+        &:before {
           display: none;
         }
       }
@@ -167,7 +169,8 @@
       font-size: 25px;
 
       & > p:first-child {
-        &:after, &:before {
+        &:after,
+        &:before {
           display: none;
         }
       }
@@ -206,7 +209,8 @@
       height: auto;
 
       & > p:first-child {
-        &:after, &:before {
+        &:after,
+        &:before {
           display: none;
         }
       }
@@ -274,7 +278,8 @@
       height: auto;
 
       & > p:first-child {
-        &:after, &:before {
+        &:after,
+        &:before {
           display: none;
         }
       }
@@ -321,6 +326,10 @@
 
   #copyright {
     font-size: 6px;
+
+    .fb_iframe_widget {
+      top: -4px;
+    }
 
     p {
       margin-top: 8px;
@@ -425,7 +434,8 @@
       height: auto;
 
       & > p:first-child {
-        &:after, &:before {
+        &:after,
+        &:before {
           display: none;
         }
       }
@@ -482,7 +492,8 @@
       font-size: 25px;
 
       & > p:first-child {
-        &:after, &:before {
+        &:after,
+        &:before {
           display: none;
         }
       }
@@ -519,7 +530,8 @@
       height: 1300px;
 
       & > p:first-child {
-        &:after, &:before {
+        &:after,
+        &:before {
           display: none;
         }
       }
@@ -527,7 +539,7 @@
       .photo-item {
         img {
           // height: 100%;
-       
+
         }
 
         .after {
@@ -586,7 +598,8 @@
       height: auto;
 
       & > p:first-child {
-        &:after, &:before {
+        &:after,
+        &:before {
           display: none;
         }
       }
@@ -633,6 +646,10 @@
 
   #copyright {
     font-size: 6px;
+
+    .fb_iframe_widget {
+      top: -4px;
+    }
 
     p {
       margin-top: 8px;
@@ -866,8 +883,14 @@
   #copyright {
     font-size: 8px;
 
+    .fb_iframe_widget {
+      position: absolute;
+      right: -310px;
+      top: -3px;
+    }
+
     p {
-      margin-top: 5px;
+      margin-top: 7px;
     }
   }
 }
@@ -979,6 +1002,14 @@
       #ftitle {
         font-size: 20px;
       }
+    }
+  }
+
+  #copyright {
+    .fb_iframe_widget {
+      position: absolute;
+      right: -310px;
+      top: -3px;
     }
   }
 }

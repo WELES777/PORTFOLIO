@@ -14,16 +14,18 @@ include "include/auth_cookie.php";
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link href="trackbar/trackbar.css" rel="stylesheet" type="text/css" />
 
-    <script type="text/javascript" src="/js/jquery-1.8.2.min.js"></script>
-    <script type="text/javascript" src="/js/jcarousellite_1.0.1.js"></script>
-    <script type="text/javascript" src="/js/shop-script.js"></script>
-    <script type="text/javascript" src="/js/jquery.cookie.min.js"></script>
-    <script type="text/javascript" src="/trackbar/jquery.trackbar.js"></script>
+    <script type="text/javascript" src="/catalog/Tel_shop/js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="/catalog/Tel_shop/js/jcarousellite_1.0.1.js"></script>
+    <script type="text/javascript" src="/catalog/Tel_shop/js/shop-script.js"></script>
+    <script type="text/javascript" src="/catalog/Tel_shop/js/jquery.cookie.min.js"></script>
+    <script type="text/javascript" src="/catalog/Tel_shop/trackbar/jquery.trackbar.js"></script>
 
-    <script type="text/javascript" src="/js/jquery.form.js"></script>
-    <script type="text/javascript" src="/js/jquery.validate.js"></script>
-    <script type="text/javascript" src="/js/TextChange.js"></script>
+    <script type="text/javascript" src="/catalog/Tel_shop/js/jquery.form.js"></script>
+    <script type="text/javascript" src="/catalog/Tel_shop/js/jquery.validate.js"></script>
+    <script type="text/javascript" src="/catalog/Tel_shop/js/TextChange.js"></script>
 	<script type="text/javascript">
+
+
 	//----- fix-------
 	var matched, browser;
 
@@ -59,9 +61,9 @@ if ( browser.chrome ) {
 
 jQuery.browser = browser;
 //-------------------
-$(document).ready(function() {	
+$(document).ready(function() {
 	$('#form_reg').validate(
-	{	
+	{
 
 		rules:{
 			"reg_login":{
@@ -69,7 +71,7 @@ $(document).ready(function() {
 				minlength:5,
 				maxlength:15,
 				remote: {
-					type: "POST",    
+					type: "POST",
 					url: "/reg/check_login.php"
 				}
 			},
@@ -103,7 +105,7 @@ $(document).ready(function() {
 			"reg_captcha":{
 				required:true,
 				remote: {
-					type: "post",    
+					type: "post",
 					url: "/reg/check_captcha.php"
 
 				}
@@ -247,7 +249,7 @@ include "include/block-news.php";
 <li>
 <div id="block-captcha">
 
-<img src="/reg/reg_captcha.php" />
+<img src="/catalog/Tel_shop/reg/reg_captcha.php" />
 <input type="text" name="reg_captcha" id="reg_captcha" />
 
 <p id="reloadcaptcha">Aktualizować</p>

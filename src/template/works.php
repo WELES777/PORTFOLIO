@@ -34,7 +34,7 @@
        <div class="after">
         <span><?php echo __("Advertising Park") ?></span>
         <a class="tooltip-custom disabled" data-tooltip-content="#icon1-content"><i class="fa fa-eye" aria-hidden="true" ></i></a>
-        <a href="catalog/Advertising_park" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+        <a href="catalog/Park" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i></a>
         <a href="https://github.com/WELES777/Advertising_park.git" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
        </div>
       </div>

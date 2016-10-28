@@ -4,7 +4,7 @@
  *   Copyright (C) 2008 by Alexander Burtsev - http://webew.ru/
  *   and abarmot - http://abarmot.habrahabr.ru/
  * 	 and 1602 - http://1602.habrahabr.ru/
- *   desing: Светлана Соловьева - http://my.mail.ru/bk/concur/
+ *   desing: Г‘ГўГҐГІГ«Г Г­Г  Г‘Г®Г«Г®ГўГјГҐГўГ  - http://my.mail.ru/bk/concur/
  *
  *  This code is a public domain.
  ***************************************************************/
@@ -38,12 +38,12 @@ $.trackbar = { // NAMESPACE
 $.trackbar.hotSearch = function(id) { // Constructor
 	// Vars
 	this.id = id;
-	
+
 	this.leftWidth = 0; // px
 	this.rightWidth = 0; // px
 	this.width = 0; // px
 	this.intervalWidth = 0; // px
-	
+
 	this.leftLimit = 0;
 	this.leftValue = 0;
 	this.rightLimit = 0;
@@ -52,10 +52,10 @@ $.trackbar.hotSearch = function(id) { // Constructor
 	this.widthRem = 6;
 	this.valueWidth = 0;
 	this.roundUp = 0;
-	
+
 	this.x0 = 0; this.y0 = 0;
-	this.blockX0 = 0; 
-	this.rightX0 = 0; 
+	this.blockX0 = 0;
+	this.rightX0 = 0;
 	this.leftX0 = 0;
 	// Flags
 	this.dual = true;
@@ -78,15 +78,15 @@ $.trackbar.hotSearch = function(id) { // Constructor
 $.trackbar.hotSearch.prototype = {
 // Const
 	ERRORS : {
-		1 : "Ошибка при инициализации объекта",
-		2 : "Левый бегунок не найден",
-		3 : "Правый бегунок не найден",
-		4 : "Левая область ресайза не найдена",
-		5 : "Правая область ресайза не найдена",
-		6 : "Не задана ширина области бегунка",
-		7 : "Не указано максимальное изменяемое значение",
-		8 : "Не указана функция-обработчик значений",
-		9 : "Не указана область клика"
+		1 : "ГЋГёГЁГЎГЄГ  ГЇГ°ГЁ ГЁГ­ГЁГ¶ГЁГ Г«ГЁГ§Г Г¶ГЁГЁ Г®ГЎГєГҐГЄГІГ ",
+		2 : "Г‹ГҐГўГ»Г© ГЎГҐГЈГіГ­Г®ГЄ Г­ГҐ Г­Г Г©Г¤ГҐГ­",
+		3 : "ГЏГ°Г ГўГ»Г© ГЎГҐГЈГіГ­Г®ГЄ Г­ГҐ Г­Г Г©Г¤ГҐГ­",
+		4 : "Г‹ГҐГўГ Гї Г®ГЎГ«Г Г±ГІГј Г°ГҐГ±Г Г©Г§Г  Г­ГҐ Г­Г Г©Г¤ГҐГ­Г ",
+		5 : "ГЏГ°Г ГўГ Гї Г®ГЎГ«Г Г±ГІГј Г°ГҐГ±Г Г©Г§Г  Г­ГҐ Г­Г Г©Г¤ГҐГ­Г ",
+		6 : "ГЌГҐ Г§Г Г¤Г Г­Г  ГёГЁГ°ГЁГ­Г  Г®ГЎГ«Г Г±ГІГЁ ГЎГҐГЈГіГ­ГЄГ ",
+		7 : "ГЌГҐ ГіГЄГ Г§Г Г­Г® Г¬Г ГЄГ±ГЁГ¬Г Г«ГјГ­Г®ГҐ ГЁГ§Г¬ГҐГ­ГїГҐГ¬Г®ГҐ Г§Г­Г Г·ГҐГ­ГЁГҐ",
+		8 : "ГЌГҐ ГіГЄГ Г§Г Г­Г  ГґГіГ­ГЄГ¶ГЁГї-Г®ГЎГ°Г ГЎГ®ГІГ·ГЁГЄ Г§Г­Г Г·ГҐГ­ГЁГ©",
+		9 : "ГЌГҐ ГіГЄГ Г§Г Г­Г  Г®ГЎГ«Г Г±ГІГј ГЄГ«ГЁГЄГ "
 	},
 	LEFT_BLOCK_PREFIX : "leftBlock",
 	RIGHT_BLOCK_PREFIX : "rightBlock",
@@ -105,26 +105,26 @@ $.trackbar.hotSearch.prototype = {
 			object.attachEvent('on' + event, handler);
 		} else alert(this.errorArray[9]);
 	},
-	defPosition : function(event) { 
-		var x = y = 0; 
+	defPosition : function(event) {
+		var x = y = 0;
 		if (document.attachEvent != null) {
-			x = window.event.clientX + document.documentElement.scrollLeft + document.body.scrollLeft; 
-			y = window.event.clientY + document.documentElement.scrollTop + document.body.scrollTop; 
-		} 
-		if (!document.attachEvent && document.addEventListener) { // Gecko 
-			x = event.clientX + window.scrollX; 
-			y = event.clientY + window.scrollY; 
-		} 
-		return {x:x, y:y}; 
+			x = window.event.clientX + document.documentElement.scrollLeft + document.body.scrollLeft;
+			y = window.event.clientY + document.documentElement.scrollTop + document.body.scrollTop;
+		}
+		if (!document.attachEvent && document.addEventListener) { // Gecko
+			x = event.clientX + window.scrollX;
+			y = event.clientY + window.scrollY;
+		}
+		return {x:x, y:y};
 	},
-	absPosition : function(obj) { 
-		var x = y = 0; 
-		while(obj) { 
-			x += obj.offsetLeft; 
-			y += obj.offsetTop; 
-			obj = obj.offsetParent; 
-		} 
-		return {x:x, y:y}; 
+	absPosition : function(obj) {
+		var x = y = 0;
+		while(obj) {
+			x += obj.offsetLeft;
+			y += obj.offsetTop;
+			obj = obj.offsetParent;
+		}
+		return {x:x, y:y};
 	},
 	// Common
 	debug : function(keys) {
@@ -148,9 +148,9 @@ $.trackbar.hotSearch.prototype = {
 			// HTML Write
 			this.jq.html('<table' + (this.width ? ' style="width:'+this.width+'px;"' : '') + 'class="trackbar" onSelectStart="return false;">\
 				<tr>\
-					<td class="l"><div id="leftBlock"><span></span><span class="limit"></span><img id="leftBegun" ondragstart="return false;" src="/trackbar/imgtrackbar/b_l.gif" width="5" height="17" alt="" /></div></td>\
+					<td class="l"><div id="leftBlock"><span></span><span class="limit"></span><img id="leftBegun" ondragstart="return false;" src="/catalog/Tel_shop/trackbar/imgtrackbar/b_l.gif" width="5" height="17" alt="" /></div></td>\
 					<td class="c" id="centerBlock"></td>\
-					<td class="r"><div id="rightBlock"><span></span><span class="limit"></span><img id="rightBegun" ondragstart="return false;" src="/trackbar/imgtrackbar/b_r.gif" width="5" height="17" alt="" /></div></td>\
+					<td class="r"><div id="rightBlock"><span></span><span class="limit"></span><img id="rightBegun" ondragstart="return false;" src="/catalog/Tel_shop/trackbar/imgtrackbar/b_r.gif" width="5" height="17" alt="" /></div></td>\
 				</tr>\
 			</table>');
 			// Is all right?
@@ -261,7 +261,7 @@ $.trackbar.hotSearch.prototype = {
 					_this.moveIntervalState = true;
 					_this.intervalWidth = _this.width - _this.rightWidth - _this.leftWidth;
 					_this.x0 = _this.defPosition(evt).x;
-					_this.rightX0 = _this.rightWidth; 
+					_this.rightX0 = _this.rightWidth;
 					_this.leftX0 = _this.leftWidth;
 				}
 			),

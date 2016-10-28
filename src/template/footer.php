@@ -7,7 +7,7 @@
       <div class="strip text-center" data-aos="zoom-in-down">
        <a><img src="img/down.png" alt=" " /></a>
       </div>
-      <div class="down shake-little shake-constant shake-constant--hover " data-aos="zoom-in-down"><a target="_blank" href="https://drive.google.com/file/d/0B2v-Fhxx0GGSQnRCTS00RnI1Rk0/view?usp=sharing"><?php echo __("Download My Resume") ?></a></div>
+      <div class="down shake-little shake-constant shake-constant--hover " data-aos="zoom-in-down"><a href="https://drive.google.com/open?id=0B7xO-GUFarjwQnFSOG16bkpSM1E"  target="_blank" onclick="window.open('https://drive.google.com/open?id=0B7xO-GUFarjwT1ZITVFmOUNHcDg');"><?php echo __("Download My Resume") ?></a></div>
      </div>
     </div>
    </div>
@@ -43,8 +43,15 @@
   <div class="row">
    <div class="col-lg-12 ">
     <div class="copyright">
-     <p><?php echo __("&#64 COPYRIGHT 2016 - VASYL DEMIANIUK - ALL RIGHTS RESERVED") ?></p>
+     <p><?php echo __("&#64 COPYRIGHT 2016 - VASYL DEMIANIUK - ALL RIGHTS RESERVED") ?> </p>
+<div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div>
     </div>
+
    </div>
   </div>
  </div>

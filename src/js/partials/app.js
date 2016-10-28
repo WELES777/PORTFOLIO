@@ -1,11 +1,3 @@
-$(window).on('load', function() {
-  // Preloader
-  $('#status').fadeOut();
-  $('#preloader').delay(150).fadeOut('slow');
-  $('body').delay(350).css({ 'overflow': 'visible' });
-
-
-});
 
 $(document).ready(function() {
   // Fallback request (AJAX) get-in-touch
@@ -155,7 +147,7 @@ $(document).ready(function() {
           .animate({ opacity: 1, top: '30%' }, 200);
       });
   };
-  setTimeout(stayOnPage, 120000);
+  setTimeout(stayOnPage, 300000);
   //   var inFormOrLink;
   // $('a').on('click', function() { inFormOrLink = true; });
   // $('form').on('submit', function() { inFormOrLink = true; });
@@ -173,10 +165,20 @@ $(document).ready(function() {
       );
   });
   // Language bar
-  $("ul[role='option'] > li > a[data-option='pl_PL']").trigger();
-  $("ul[role='option'] > li > a[data-option='en_US']").trigger();
 
 
+  $('.bfh-selectbox-options div ul li a').on('click', function() {
+    refLang = "lang=" + $(this).attr('data-option');
+    $.post("getlang.php", refLang);
+    // Reload needs to be treminated in regards to finish get request.
+    setTimeout(function() { location.reload(); }, 300);
 
+    //   refLang = $('.bfh-selectbox > input ').attr('value');
+    // if (refLang == "en_US") {
+    //   window.location.href='?lang=en_US';
+    // } else if (refLang == "pl_PL") {
+    //   window.location.href='?lang=pl_PL';
+    // }
+  });
 
 });

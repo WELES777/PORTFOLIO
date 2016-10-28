@@ -49,26 +49,23 @@
 
 
     // $("html").getNiceScroll().hide();
-
-
-
-
-
-
-
-    //  Preloader
-
-    var minWidth = 480 // minimum width of screen
-    if ($(window).width() <= minSize) {
-      // do nothing
-    } else {
-       $("#status").fadeIn();
-    $("#preloader").fadeIn();
-    $.get(url, datra, function() {
+  //  Preloader
+  var minWidth = 480 // minimum width of screen
+  if ($(window).width() <= minWidth) {
+    // do nothing
+  } else {
+    // $("#status").fadeIn();
+    // $("#preloader").fadeIn();
+    $.get(url, dates, function() {
       $("#status").fadeOut();
       $("#preloader").fadeOut();
     });
-    }
+  }
+
+
+
+
+
 
 
 

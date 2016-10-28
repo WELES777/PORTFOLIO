@@ -2,7 +2,7 @@
 
  <!--  Language bar -->
 <!-- Not working -->
-   <div class="bfh-selectbox bfh-languages" data-language="pl_PL" data-available="en_US,pl_PL" data-flags="true" data-blank="false">
+   <div class="bfh-selectbox bfh-languages"  data-available="en_US,pl_PL" data-flags="true" data-blank="false">
     <input type="hidden" value="">
     <a class="bfh-selectbox-toggle" role="button" data-toggle="bfh-selectbox" href="#">
      <span class="bfh-selectbox-option input-medium" data-option=""></span>
@@ -20,6 +20,7 @@
             </ul>
      </div>
     </div>
+
    </div>
 
 
@@ -37,7 +38,7 @@
       <input type="text" class="form-control" id="op-email" name="position" placeholder="<?php echo __("Your position") ?>">
      </div>
      <div class="form-group" data-aos="zoom-out-up">
-      <textarea rows="2" class="form-control" id="op-message" name="opinion" placeholder="<?php echo __("Your opinion") ?>*" required></textarea>
+      <textarea rows="2" class="form-control" id="op-message" name="opinion" placeholder="<?php echo __("Your opinion") ?>*" required ></textarea>
      </div>
      <div class="form-group" data-aos="zoom-out-up">
       <button class="btn btn-default sub-btn send-button" id="somebutx"><i class="fa fa-envelope" aria-hidden="true"></i> <?php echo __("SEND") ?>

@@ -4,7 +4,7 @@ defined('included') or die('Brak dostępu!');
 <div id="block-category">
   <p class="header-title" >Kategorie towarów</p>
   <ul>
-    <li><a id="index1" ><img src="/images/switch-icon.gif" id="switch-images" />Switche</a>
+    <li><a id="index1" ><img src="/catalog/Tel_shop/images/switch-icon.gif" id="switch-images" />Switche</a>
       <ul class="category-section">
         <li><a href="view_cat.php?type=switch"><strong>Wszystkie modele</strong> </a></li>
         <?php
@@ -19,11 +19,11 @@ defined('included') or die('Brak dostępu!');
            ';
          }
          while ($row = mysqli_fetch_array($result));
-       } 
+       }
        ?>
      </ul>
    </li>
-   <li><a id="index2" ><img src="/images/router-icon.gif" id="router-images" />Routery</a>
+   <li><a id="index2" ><img src="/catalog/Tel_shop/images/router-icon.gif" id="router-images" />Routery</a>
     <ul class="category-section">
       <li><a href="view_cat.php?type=router"><strong>Wszystkie modele</strong> </a></li>
       <?php
@@ -38,11 +38,11 @@ defined('included') or die('Brak dostępu!');
          ';
        }
        while ($row = mysqli_fetch_array($result));
-     } 
+     }
      ?>
  </ul>
  </li>
- <li><a id="index4" ><img src="/images/cable-icon.gif" id="cable-images" />Kable</a>
+ <li><a id="index4" ><img src="/catalog/Tel_shop/images/cable-icon.gif" id="cable-images" />Kable</a>
   <ul class="category-section">
     <li><a href="view_cat.php?type=cable"><strong>Wszystkie kategorie</strong> </a></li>
     <?php
@@ -57,11 +57,11 @@ defined('included') or die('Brak dostępu!');
        ';
      }
      while ($row = mysqli_fetch_array($result));
-   } 
+   }
    ?>
  </ul>
 </li>
-<li><a id="index5" ><img src="/images/access-icon.gif" id="cable-images" />Akcesoria</a>
+<li><a id="index5" ><img src="/catalog/Tel_shop/images/access-icon.gif" id="access-images" />Akcesoria</a>
   <ul class="category-section">
     <li><a href="view_cat.php?type=acces"><strong>Wszystkie podkategorie</strong> </a></li>
     <?php
@@ -76,7 +76,7 @@ defined('included') or die('Brak dostępu!');
        ';
      }
      while ($row = mysqli_fetch_array($result));
-   } 
+   }
    ?>
  </ul>
 </li>

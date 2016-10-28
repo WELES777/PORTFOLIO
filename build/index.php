@@ -1,16 +1,24 @@
+<?php include "getlang.php" ; ?>
 <!DOCTYPE html>
 <!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
 <!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
 <!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
 <!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!-->
-<html lang="en" class="no-js">
+<html lang="en" class="no-js" >
 <!--<![endif]-->
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>
+    $(window).on('load', function() {
+  // Preloader
+  $('#status').fadeOut();
+  $('#preloader').delay(150).fadeOut('slow');
+  $('body').delay(350).css({ 'overflow': 'visible' });
+});
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -20,12 +28,21 @@
   ga('send', 'pageview');
 
 </script>
-<meta name="msapplication-config" content="browserconfig.xml" />
+    <meta name="msapplication-config" content="browserconfig.xml" />
 
-    <meta name="description" content="Portfolio | Vasyl Demianiuk - Junior Web Developer, JavaScript Developer, PHP Developer">
-    <meta name="keywords" content="Developer, junior, PHP, ,JavaScript, Portfolio, Web">
-<meta name="author" content="Hege Refsnes">
-    <meta name="distribution" content="global">
+    <meta name="keywords" content="Developer, junior, PHP, ,JavaScript, Portfolio, Web, HTML&CSS, work, programista, praca, staż" />
+    <meta name="author" content="VASYL DEMIANIUK" />
+  <!-- Open Graph data -->
+<meta property="fb:app_id" content="359934191012288" />
+<meta property="og:title" content="Vasyl Demianiuk - My PORTFOLIO" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://vasyldemianiuk.com/" />
+<meta property="og:image" content="https://vasyldemianiuk.com/img/port.jpg" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="200" />
+<meta property="og:image:height" content="300" />
+<meta property="og:description" content="Cześć! Jestem początkującym web developerem. Uczę się technologii front-endu od prawie 2 lat, terz mam pobierznie interesuję się back-endem i administracją sieci informatycznych." />
+
     <!--[if lt IE 9]>
         <script src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
       <![endif]-->
@@ -41,15 +58,31 @@
     <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
     <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#d9d9d9">
-
-    <title>Vasyl Demianiuk - My PORTFOLIO</title>
+     <title>Vasyl Demianiuk - My PORTFOLIO</title>
     <link href='//fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'>
 
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '359934191012288',
+      xfbml      : true,
+      version    : 'v2.8'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
     <!--[if lt IE 7]>
          <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -59,8 +92,8 @@
     <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <?php include ("php/getlang.php"); ?>
-    <noscript><?php echo __("Your browser does not support JavaScript!To tun it on use <a href='http://enable-javascript.com/'>this</a> instuction") ?></noscript>
+
+    <noscript><?php echo __("Your browser does not support JavaScript!To turn it on use <a href='http://enable-javascript.com/'>this</a> instuction"); ?></noscript>
     <!-- Preloader -->
 <div id="preloader">
     <div id="status">&nbsp;</div>
@@ -71,7 +104,7 @@
     
      <!--  Language bar -->
     <!-- Not working -->
-       <div class="bfh-selectbox bfh-languages" data-language="pl_PL" data-available="en_US,pl_PL" data-flags="true" data-blank="false">
+       <div class="bfh-selectbox bfh-languages"  data-available="en_US,pl_PL" data-flags="true" data-blank="false">
         <input type="hidden" value="">
         <a class="bfh-selectbox-toggle" role="button" data-toggle="bfh-selectbox" href="#">
          <span class="bfh-selectbox-option input-medium" data-option=""></span>
@@ -89,6 +122,7 @@
                 </ul>
          </div>
         </div>
+    
        </div>
     
     
@@ -106,7 +140,7 @@
           <input type="text" class="form-control" id="op-email" name="position" placeholder="<?php echo __("Your position") ?>">
          </div>
          <div class="form-group" data-aos="zoom-out-up">
-          <textarea rows="2" class="form-control" id="op-message" name="opinion" placeholder="<?php echo __("Your opinion") ?>*" required></textarea>
+          <textarea rows="2" class="form-control" id="op-message" name="opinion" placeholder="<?php echo __("Your opinion") ?>*" required ></textarea>
          </div>
          <div class="form-group" data-aos="zoom-out-up">
           <button class="btn btn-default sub-btn send-button" id="somebutx"><i class="fa fa-envelope" aria-hidden="true"></i> <?php echo __("SEND") ?>
@@ -445,7 +479,7 @@
            <div class="after">
             <span><?php echo __("Advertising Park") ?></span>
             <a class="tooltip-custom disabled" data-tooltip-content="#icon1-content"><i class="fa fa-eye" aria-hidden="true" ></i></a>
-            <a href="catalog/Advertising_park" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+            <a href="catalog/Park" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i></a>
             <a href="https://github.com/WELES777/Advertising_park.git" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
            </div>
           </div>
@@ -572,7 +606,7 @@
           <div class="strip text-center" data-aos="zoom-in-down">
            <a><img src="img/down.png" alt=" " /></a>
           </div>
-          <div class="down shake-little shake-constant shake-constant--hover " data-aos="zoom-in-down"><a target="_blank" href="https://drive.google.com/file/d/0B2v-Fhxx0GGSQnRCTS00RnI1Rk0/view?usp=sharing"><?php echo __("Download My Resume") ?></a></div>
+          <div class="down shake-little shake-constant shake-constant--hover " data-aos="zoom-in-down"><a href="https://drive.google.com/open?id=0B7xO-GUFarjwQnFSOG16bkpSM1E"  target="_blank" onclick="window.open('https://drive.google.com/open?id=0B7xO-GUFarjwT1ZITVFmOUNHcDg');"><?php echo __("Download My Resume") ?></a></div>
          </div>
         </div>
        </div>
@@ -608,13 +642,19 @@
       <div class="row">
        <div class="col-lg-12 ">
         <div class="copyright">
-         <p><?php echo __("&#64 COPYRIGHT 2016 - VASYL DEMIANIUK - ALL RIGHTS RESERVED") ?></p>
+         <p><?php echo __("&#64 COPYRIGHT 2016 - VASYL DEMIANIUK - ALL RIGHTS RESERVED") ?> </p>
+    <div
+      class="fb-like"
+      data-share="true"
+      data-width="450"
+      data-show-faces="true">
+    </div>
         </div>
+    
        </div>
       </div>
      </div>
     </section>
-
     <!--  Footer libs -->
     <script src="js/main.js"></script>
           </body>

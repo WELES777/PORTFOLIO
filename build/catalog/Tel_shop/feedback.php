@@ -1,5 +1,5 @@
 <?php
-   define('included', true);	
+   define('included', true);
    include("include/db_connect.php");
    include("functions/functions.php");
    session_start();
@@ -8,68 +8,68 @@
 if ($_POST["send_message"])
 {
     $error = array();
-    
-  if (!$_POST["feed_name"]) $error[] = "Podaj imię";  
-  
+
+  if (!$_POST["feed_name"]) $error[] = "Podaj imię";
+
   if(!preg_match("/^(?:[a-z0-9]+(?:[-_.]?[a-z0-9]+)?@[a-z0-9_.-]+(?:\.?[a-z0-9]+)?\.[a-z]{2,5})$/i",trim($_POST["feed_email"])))
   {
-    $error[] = "Posaj swój E-mail"; 
+    $error[] = "Posaj swój E-mail";
   }
-   
-  if (!$_POST["feed_subject"]) $error[] = "Podaj tytuł listy!";  
-  if (!$_POST["feed_text"]) $error[] = "Podaj treść listy!";  
-  
+
+  if (!$_POST["feed_subject"]) $error[] = "Podaj tytuł listy!";
+  if (!$_POST["feed_text"]) $error[] = "Podaj treść listy!";
+
   if (strtolower($_POST["reg_captcha"]) != $_SESSION['img_captcha'])
   {
     $error[] = "Nie prawidłowy kod ze zdjęcia!";
-  }  
-    
-   
+  }
+
+
    if (count($error))
    {
-     $_SESSION['message'] = "<p id='form-error'>".implode('<br />',$error)."</p>";  
-      
+     $_SESSION['message'] = "<p id='form-error'>".implode('<br />',$error)."</p>";
+
    }else
    {
     	         send_mail($_POST["feed_email"],
 						       'vasia.wendetta@gmali.com',
 						$_POST["feed_subject"],
-						'Od: '.$_POST["feed_name"].'<br/>'.$_POST["feed_text"]); 
-    
-     $_SESSION['message'] = "<p id='form-success'>Wiadomość została odesłana!</p>";   
-    
+						'Od: '.$_POST["feed_name"].'<br/>'.$_POST["feed_text"]);
+
+     $_SESSION['message'] = "<p id='form-success'>Wiadomość została odesłana!</p>";
+
    }
-    
-}     
+
+}
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
 
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=iso-8859-2" />
-    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+   <link href="css/reset.css" rel="stylesheet" type="text/css" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link href="trackbar/trackbar.css" rel="stylesheet" type="text/css" />
-    
-    <script type="text/javascript" src="/js/jquery-1.8.2.min.js"></script> 
-    <script type="text/javascript" src="/js/jcarousellite_1.0.1.js"></script> 
-    <script type="text/javascript" src="/js/shop-script.js"></script>
-    <script type="text/javascript" src="/js/jquery.cookie.min.js"></script>
-    <script type="text/javascript" src="/trackbar/jquery.trackbar.js"></script>
-    <script type="text/javascript" src="/js/TextChange.js"></script>
-    
+
+    <script type="text/javascript" src="/catalog/Tel_shop/js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="/catalog/Tel_shop/js/jcarousellite_1.0.1.js"></script>
+    <script type="text/javascript" src="/catalog/Tel_shop/js/shop-script.js"></script>
+    <script type="text/javascript" src="/catalog/Tel_shop/js/jquery.cookie.min.js"></script>
+    <script type="text/javascript" src="/catalog/Tel_shop/trackbar/jquery.trackbar.js"></script>
+    <script type="text/javascript" src="/catalog/Tel_shop/js/TextChange.js"></script>
+
 	<title>Sklep internetowy sprzętu telekomunikacyjnego</title>
 </head>
 <body>
 <div id="block-body">
-<?php	
-    include("include/block-header.php");    
+<?php
+    include("include/block-header.php");
 ?>
 <div id="block-right">
-<?php	
-    include("include/block-category.php");  
-    include("include/block-parameter.php");  
-    include("include/block-news.php"); 
+<?php
+    include("include/block-category.php");
+    include("include/block-parameter.php");
+    include("include/block-news.php");
 ?>
 </div>
 <div id="block-content">
@@ -92,7 +92,7 @@ if ($_POST["send_message"])
 <li>
 <label for="reg_captcha">Kod obronny</label>
 <div id="block-captcha">
-<img src="/reg/reg_captcha.php" />
+<img src="/catalog/Tel_shop/reg/reg_captcha.php" />
 <input type="text" name="reg_captcha" id="reg_captcha" />
 <p id="reloadcaptcha">Aktualizować</p>
 </div>
@@ -106,8 +106,8 @@ if ($_POST["send_message"])
 </div>
 
 <?php
-    include("include/block-random.php");	
-    include("include/block-footer.php");    
+    include("include/block-random.php");
+    include("include/block-footer.php");
 ?>
 </div>
 

@@ -35,19 +35,19 @@ $_SESSION['countid'] = $id;
   <meta name="keywords" content="<?php echo $resquery["seo_words"]; ?>" />
 
   <link href="css/reset.css" rel="stylesheet" type="text/css" />
-  <link href="css/style.css" rel="stylesheet" type="text/css" />
-  <link href="trackbar/trackbar.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="trackbar/trackbar.css" rel="stylesheet" type="text/css" />
 
-  <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
-  <script type="text/javascript" src="js/jcarousellite_1.0.1.js"></script>
-  <script type="text/javascript" src="js/shop-script.js"></script>
-  <script type="text/javascript" src="js/jquery.cookie.min.js"></script>
-  <script type="text/javascript" src="trackbar/jquery.trackbar.js"></script>
-  <script type="text/javascript" src="js/TextChange.js"></script>
+    <script type="text/javascript" src="/catalog/Tel_shop/js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="/catalog/Tel_shop/js/jcarousellite_1.0.1.js"></script>
+    <script type="text/javascript" src="/catalog/Tel_shop/js/shop-script.js"></script>
+    <script type="text/javascript" src="/catalog/Tel_shop/js/jquery.cookie.min.js"></script>
+    <script type="text/javascript" src="/catalog/Tel_shop/trackbar/jquery.trackbar.js"></script>
+    <script type="text/javascript" src="/catalog/Tel_shop/js/TextChange.js"></script>
 
-  <link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox.css" />
-  <script type="text/javascript" src="fancybox/jquery.fancybox.js"></script>
-  <script type="text/javascript" src="js/jTabs.js"></script>
+  <link rel="stylesheet" type="text/css" href="/catalog/Tel_shop/fancybox/jquery.fancybox.css" />
+  <script type="text/javascript" src="/catalog/Tel_shop/fancybox/jquery.fancybox.js"></script>
+  <script type="text/javascript" src="/catalog/Tel_shop/js/jTabs.js"></script>
 
   <title>Sklep internetowy sprzętu telekomunikacyjnego</title>
 

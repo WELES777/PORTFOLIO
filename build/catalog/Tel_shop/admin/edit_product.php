@@ -142,7 +142,7 @@ $result = mysqli_query($link, "SELECT * FROM table_products WHERE products_id='$
                 }
                 if ($row["type_product"] == "cable") {
                     $type_cable = "selected";
-                } 
+                }
                 if ($row["type_product"] == "acces") {
                     $type_acces = "selected";
                 }
@@ -266,7 +266,7 @@ $result = mysqli_query($link, "SELECT * FROM table_products WHERE products_id='$
                         $width  = intval($ratio * $width);
                         $height = intval($ratio * $height);
                     } else {
-                        $img_path = "./images/noimages.png";
+                        $img_path = "/admin/images/noimages.png";
                         $width    = 80;
                         $height   = 70;
                     }

@@ -98,14 +98,14 @@ if (mysqli_num_rows($result) > 0) {
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link href="trackbar/trackbar.css" rel="stylesheet" type="text/css" />
 
-    <script type="text/javascript" src="/js/jquery-1.8.2.min.js"></script>
-    <script type="text/javascript" src="/js/jcarousellite_1.0.1.js"></script>
-    <script type="text/javascript" src="/js/shop-script.js"></script>
-    <script type="text/javascript" src="/js/jquery.cookie.min.js"></script>
-    <script type="text/javascript" src="/trackbar/jquery.trackbar.js"></script>
-    <script type="text/javascript" src="/js/TextChange.js"></script>
+    <script type="text/javascript" src="/catalog/Tel_shop/js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="/catalog/Tel_shop/js/jcarousellite_1.0.1.js"></script>
+    <script type="text/javascript" src="/catalog/Tel_shop/js/shop-script.js"></script>
+    <script type="text/javascript" src="/catalog/Tel_shop/js/jquery.cookie.min.js"></script>
+    <script type="text/javascript" src="/catalog/Tel_shop/trackbar/jquery.trackbar.js"></script>
+    <script type="text/javascript" src="/catalog/Tel_shop/js/TextChange.js"></script>
 
-  <title>Корзина Заказов</title>
+  <title>Koszyk zamówień</title>
 </head>
 <body>
 <div id="block-body">
@@ -214,7 +214,7 @@ switch ($action) {
 </div>
 
 <div id="tovar' . $row["cart_id"] . '" class="price-product"><h5><span class="span-count" >' . $row["cart_count"] . '</span> x <span>' . $row["cart_price"] . '</span></h5><p price="' . $row["cart_price"] . '" >' . group_numerals($int) . ' zł</p></div>
-<div class="delete-cart"><a  href="cart.php?id=' . $row["cart_id"] . '&action=delete" ><img src="/images/bsk_item_del.png" /></a></div>
+<div class="delete-cart"><a  href="cart.php?id=' . $row["cart_id"] . '&action=delete" ><img src="/catalog/Tel_shop/images/bsk_item_del.png" /></a></div>
 
 <div id="bottom-cart-line"></div>
 </div>
@@ -448,7 +448,7 @@ switch ($action) {
 </div>
 
 <div id="tovar' . $row["cart_id"] . '" class="price-product"><h5><span class="span-count" >' . $row["cart_count"] . '</span> x <span>' . $row["cart_price"] . '</span></h5><p price="' . $row["cart_price"] . '" >' . group_numerals($int) . ' zł</p></div>
-<div class="delete-cart"><a  href="cart.php?id=' . $row["cart_id"] . '&action=delete" ><img src="/images/bsk_item_del.png" /></a></div>
+<div class="delete-cart"><a  href="cart.php?id=' . $row["cart_id"] . '&action=delete" ><img src="/catalog/Tel_shop/images/bsk_item_del.png" /></a></div>
 
 <div id="bottom-cart-line"></div>
 </div>

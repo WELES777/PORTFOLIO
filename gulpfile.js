@@ -41,7 +41,7 @@ var path = {
     html: 'src/**',
     js: 'src/js/**',
     style: 'src/style/**',
-    img: 'src/img/**',
+    img: 'src/img/*.*',
     fonts: 'src/fonts/**',
     php: 'src/php/*.php'
 
@@ -80,7 +80,7 @@ gulp.task('js:build', function() {
   gulp.src(path.src.js)
     .pipe(rigger())
     .pipe(sourcemaps.init())
-    // .pipe(uglify())
+   .pipe(uglify())
     .pipe(sourcemaps.write())
     .pipe(gulp.dest(path.build.js))
     .pipe(reload({ stream: true }));
@@ -110,7 +110,7 @@ gulp.task('style:build', function() {
         "Safari >= 6"
       ]
     }))
-    // .pipe(cssclean())
+    .pipe(cssclean())
     .pipe(sourcemaps.write())
     .pipe(gulp.dest(path.build.css))
     .pipe(reload({ stream: true }));
@@ -136,6 +136,15 @@ gulp.task('fonts:build', function() {
     .pipe(gulp.dest(path.build.fonts))
 });
 
+// Include php
+gulp.task('php:build', function() {
+  gulp.src(path.src.php)
+    //.pipe(rigger())
+    //.pipe(uglify())
+    .pipe(gulp.dest(path.build.php))
+    .pipe(reload({ stream: true }));
+});
+
 // Run all plugins
 gulp.task('build', [
   'html:build',
@@ -146,14 +155,6 @@ gulp.task('build', [
   'php:build'
 ]);
 
-// Include php
-gulp.task('php:build', function() {
-  gulp.src(path.src.php)
-    //.pipe(rigger())
-    // .pipe(uglify())
-    .pipe(gulp.dest(path.build.php))
-    .pipe(reload({ stream: true }));
-});
 
 
 

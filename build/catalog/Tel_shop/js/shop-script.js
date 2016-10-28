@@ -17,8 +17,8 @@ $(document).ready(function() {
         $("#block-tovar-grid").show();
         $("#block-towar-list").hide();
 
-        $("#style-grid").attr("src", "/images/icon-grid-active.png");
-        $("#style-list").attr("src", "/images/icon-list.png");
+        $("#style-grid").attr("src", "/catalog/Tel_shop/images/icon-grid-active.png");
+        $("#style-list").attr("src", "/catalog/Tel_shop/images/icon-list.png");
 
         $.cookie('select_style', 'grid');
     });
@@ -28,8 +28,8 @@ $(document).ready(function() {
         $("#block-tovar-grid").hide();
         $("#block-towar-list").show();
 
-        $("#style-list").attr("src", "/images/icon-list-active.png");
-        $("#style-grid").attr("src", "/images/icon-grid.png");
+        $("#style-list").attr("src", "/catalog/Tel_shop/images/icon-list-active.png");
+        $("#style-grid").attr("src", "/catalog/Tel_shop/images/icon-grid.png");
 
         $.cookie('select_style', 'list');
     });
@@ -39,14 +39,14 @@ $(document).ready(function() {
         $("#block-tovar-grid").show();
         $("#block-towar-list").hide();
 
-        $("#style-grid").attr("src", "/images/icon-grid-active.png");
-        $("#style-list").attr("src", "/images/icon-list.png");
+        $("#style-grid").attr("src", "/catalog/Tel_shop/images/icon-grid-active.png");
+        $("#style-list").attr("src", "/catalog/Tel_shop/images/icon-list.png");
     } else {
         $("#block-tovar-grid").hide();
         $("#block-towar-list").show();
 
-        $("#style-list").attr("src", "/images/icon-list-active.png");
-        $("#style-grid").attr("src", "/images/icon-grid.png");
+        $("#style-list").attr("src", "/catalog/Tel_shop/images/icon-list-active.png");
+        $("#style-grid").attr("src", "/catalog/Tel_shop/images/icon-grid.png");
     }
 
 
@@ -81,7 +81,7 @@ $(document).ready(function() {
     $('#genpass').click(function() {
         $.ajax({
             type: "POST",
-            url: "/functions/genpass.php",
+            url: "/catalog/Tel_shop/functions/genpass.php",
             dataType: "html",
             cache: false,
             success: function(data) {
@@ -93,7 +93,7 @@ $(document).ready(function() {
 
 
     $('#reloadcaptcha').click(function() {
-        $('#block-captcha > img').attr("src", "/reg/reg_captcha.php?r=" + Math.random());
+        $('#block-captcha > img').attr("src", "/catalog/Tel_shop/reg/reg_captcha.php?r=" + Math.random());
     });
 
 
@@ -182,7 +182,7 @@ $(document).ready(function() {
 
             $.ajax({
                 type: "POST",
-                url: "/include/auth.php",
+                url: "/catalog/Tel_shop/include/auth.php",
                 data: "login=" + auth_login + "&pass=" + auth_pass + "&rememberme=" + auth_rememberme,
                 dataType: "html",
                 cache: false,
@@ -233,7 +233,7 @@ $(document).ready(function() {
 
             $.ajax({
                 type: "POST",
-                url: "/include/remind-pass.php",
+                url: "/catalog/Tel_shop/include/remind-pass.php",
                 data: "email=" + recall_email,
                 dataType: "html",
                 cache: false,
@@ -272,7 +272,7 @@ $(document).ready(function() {
 
         $.ajax({
             type: "POST",
-            url: "/include/logout.php",
+            url: "/catalog/Tel_shop/include/logout.php",
             dataType: "html",
             cache: false,
             success: function(data) {
@@ -292,7 +292,7 @@ $(document).ready(function() {
         if (input_search.length >= 3 && input_search.length < 150) {
             $.ajax({
                 type: "POST",
-                url: "/include/search.php",
+                url: "/catalog/Tel_shop/include/search.php",
                 data: "text=" + input_search,
                 dataType: "html",
                 cache: false,
@@ -398,7 +398,7 @@ $(document).ready(function() {
 
         $.ajax({
             type: "POST",
-            url: "/include/addtocart.php",
+            url: "/catalog/Tel_shop/include/addtocart.php",
             data: "id=" + tid,
             dataType: "html",
             cache: false,
@@ -412,7 +412,7 @@ $(document).ready(function() {
     function loadcart() {
         $.ajax({
             type: "POST",
-            url: "/include/loadcart.php",
+            url: "/catalog/Tel_shop/include/loadcart.php",
             dataType: "html",
             cache: false,
             success: function(data) {
@@ -474,7 +474,7 @@ $(document).ready(function() {
 
         $.ajax({
             type: "POST",
-            url: "/include/count-minus.php",
+            url: "/catalog/Tel_shop/include/count-minus.php",
             data: "id=" + iid,
             dataType: "html",
             cache: false,
@@ -502,7 +502,7 @@ $(document).ready(function() {
 
         $.ajax({
             type: "POST",
-            url: "/include/count-plus.php",
+            url: "/catalog/Tel_shop/include/count-plus.php",
             data: "id=" + iid,
             dataType: "html",
             cache: false,
@@ -533,7 +533,7 @@ $(document).ready(function() {
 
             $.ajax({
                 type: "POST",
-                url: "/include/count-input.php",
+                url: "/catalog/Tel_shop/include/count-input.php",
                 data: "id=" + iid + "&count=" + incount,
                 dataType: "html",
                 cache: false,
@@ -560,7 +560,7 @@ $(document).ready(function() {
 
         $.ajax({
             type: "POST",
-            url: "/include/summary_price.php",
+            url: "/catalog/Tel_shop/include/summary_price.php",
             dataType: "html",
             cache: false,
             success: function(data) {
@@ -614,7 +614,7 @@ $(document).ready(function() {
 
             $.ajax({
                 type: "POST",
-                url: "/include/add_review.php",
+                url: "/catalog/Tel_shop/include/add_review.php",
                 data: "id=" + iid + "&name=" + name + "&good=" + good + "&bad=" + bad + "&comment=" + comment,
                 dataType: "html",
                 cache: false,
@@ -625,5 +625,5 @@ $(document).ready(function() {
         }
     });
 
-   
+
 });

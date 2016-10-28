@@ -1,6 +1,6 @@
 html{
     z-index:0;
-    background: url(/images/pat_try.jpg);
+    background: url(/catalog/Tel_shop/images/pat_try.jpg);
 }
 #block-body{
     width: 1040px;
@@ -8,7 +8,8 @@ html{
     margin: 0 auto;
     z-index:1;
     background: white;
-   padding: 10px;
+   padding: 0px 10px;
+
 }
 #block-header{
     width: 1035px;
@@ -28,11 +29,11 @@ html{
     margin-left: -10px;
     height: 35px;
     /*background: #258ED2;*/
-    background: url(/images/grd-header.png);
-    border-radius:4px; 
-    -webkit-border-radius:4px; 
-    -moz-border-radius:4px; 
-    
+    background: url(/catalog/Tel_shop/images/grd-header.png);
+    border-radius:4px;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+
 }
 #block-footer{
     z-index: 2;
@@ -42,7 +43,7 @@ html{
     padding:0 12px;
     margin-left: -10px;
     clear: both;
-    background: url(/images/grd-footer.png) ;
+    background: url(/catalog/Tel_shop/images/grd-footer.png) ;
     -webkit-border-radius: 3px;
     border-radius: 3px;
 }
@@ -81,25 +82,25 @@ html{
 
 }
 #reg-auth-title > a#active-button{
-   background: url(/images/auth-butt-bg-click.png);
+   background: url(/catalog/Tel_shop/images/auth-butt-bg-click.png);
 }
 #reg-auth-title a.top-auth{
     font:bold 13px sans-serif;
     text-decoration: none;
-    background: url(/images/auth-butt-bg.png);
+    background: url(/catalog/Tel_shop/images/auth-butt-bg.png);
     padding-left: 8px;
     padding-right: 8px;
     padding-top: 4px;
     padding-bottom: 4px;
     border: 1px solid #E9EAEA;
     color: black;
-    border-radius:5px ; 
-   -webkit-border-radius:5px ; 
-   -moz-border-radius:5px ; 
+    border-radius:5px ;
+   -webkit-border-radius:5px ;
+   -moz-border-radius:5px ;
    cursor: pointer;
 }
 #reg-auth-title a.top-auth:hover{
-    background: url(/images/auth-butt-bg-move.png);
+    background: url(/catalog/Tel_shop/images/auth-butt-bg-move.png);
 }
 #reg-auth-title a{
     font:14px sans-serif;
@@ -112,7 +113,7 @@ html{
     border-bottom:none;
 }
 #top-line{
-    background: url(/images/line.png);
+    background: url(/catalog/Tel_shop/images/line.png);
     width: 1035px;
     height: 5px;
 }
@@ -136,12 +137,12 @@ html{
     margin-top: 0px;
     margin-bottom: 10px;
     margin-right: 45px;
-    
+
 }
 #personal-info img{
     margin-left: 265px;
-    margin-top: -50px; 
-    position: absolute; 
+    margin-top: -50px;
+    position: absolute;
 }
 #block-search{
     width: 350px;
@@ -149,15 +150,15 @@ html{
     margin-left: 690px;
     margin-top: 23px;
     z-index: 999;
-    position: absolute;   
+    position: absolute;
 }
 #block-search span{
     width: 13px;
     height: 13px;
-    background: url(/images/icon-search.png);
+    background: url(/catalog/Tel_shop/images/icon-search.png);
     position: absolute;
     margin-top: 10px;
-    margin-left: 6px;            
+    margin-left: 6px;
 }
 #block-search input#input-search{
     width: 250px;
@@ -170,12 +171,12 @@ html{
     width: 68px;
     height: 30px;
     border: 1px solid #E1E1E2;
-    background: url(/images/grd-button-search-norm.png);  
+    background: url(/catalog/Tel_shop/images/grd-button-search-norm.png);
     margin-left: -5px;
     cursor: pointer;
 }
 #button-search:hover{
-    background: url(/images/grd-button-search-hover.png);  
+    background: url(/catalog/Tel_shop/images/grd-button-search-hover.png);
 }
 #top-menu{
     width: 1033px;
@@ -207,15 +208,15 @@ html{
 #block-basket{
   margin-top: 0px;
   padding-top: 7px;
-  margin-right: -3px;  
+  margin-right: -3px;
 }
 #block-basket span{
-  color: #34659D;  
+  color: #34659D;
 }
 #block-basket a{
   font: bold 15px sans-serif;
   text-decoration: none;
-  margin-left: 40px; 
+  margin-left: 40px;
   border-bottom: 1px dashed #34659D;
   color: black;
 }
@@ -228,7 +229,7 @@ html{
   margin-top: -3px;
 }
 #nav-line{
-    background: url(/images/line.png);
+    background: url(/catalog/Tel_shop/images/line.png);
     width: 1035px;
     height: 5px;
     margin-top: -3px;
@@ -249,14 +250,14 @@ html{
     padding-top: 7px;
     padding-bottom: 7px;
     color: white;
-    background: url(/images/grd-title.png);
+    background: url(/catalog/Tel_shop/images/grd-title.png);
       border-radius: 5px 5px 0  0;
      -webkit-border-radius: 5px 5px 0  0;
-     -moz-border-radius: 5px 5px 0  0; 
+     -moz-border-radius: 5px 5px 0  0;
 }
 #block-category > ul > li{
     border-bottom: 1px solid #EFEFEF;
-    
+
 }
 #block-category > ul > li > a{
     font: 15px sans-serif;
@@ -283,6 +284,10 @@ html{
     margin-top: -2px;
 }
 #cable-images{
+    position: absolute;
+    margin-left: -30px;
+}
+#access-images{
     position: absolute;
     margin-left: -30px;
 }
@@ -348,16 +353,16 @@ html{
 #button-param-search{
     width: 84px;
     height: 27px;
-    background: url(/images/button-search-norm.png);
+    background: url(/catalog/Tel_shop/images/button-search-norm.png);
     margin-top: 20px;
     border: none;
     cursor: pointer;
 }
 #button-param-search:hover{
-    background: url(/images/button-search-hover.png);
+    background: url(/catalog/Tel_shop/images/button-search-hover.png);
 }
 #button-param-search:active{
-    background: url(/images/button-search-active.png);
+    background: url(/catalog/Tel_shop/images/button-search-active.png);
 }
 #block-news{
     width: 220px;
@@ -401,7 +406,7 @@ html{
 #news-next{
     margin-top: 5px;
     margin-bottom: 5px;
-    cursor: pointer;  
+    cursor: pointer;
 }
 #footer-phone{
     width: 270px;
@@ -522,8 +527,8 @@ html{
 }
 .block-images-grid{
   width: auto;
-  height: 230px; 
-  float: left; 
+  height: 230px;
+  float: left;
   margin-right: 15px;
 }
 .reviews-and-counts-grid{
@@ -545,11 +550,11 @@ html{
     position: absolute;
 }
 .style-price-grid{
-  font: 16px sans-serif;  
+  font: 16px sans-serif;
   margin-top: 7px;
 }
 .style-price-grid strong{
-  font: 23px sans-serif;  
+  font: 23px sans-serif;
   color: #6B6D73;
 }
 .add-cart-style-grid{
@@ -560,13 +565,13 @@ html{
     float: left;
     margin-top: 8px;
     margin-right: 10px;
-    background: url(/images/add-cart-norm.png);
+    background: url(/catalog/Tel_shop/images/add-cart-norm.png);
 }
 .add-cart-style-grid:hover{
-    background: url(/images/add-cart-hover.png);
+    background: url(/catalog/Tel_shop/images/add-cart-hover.png);
 }
 .add-cart-style-grid:active{
-    background: url(/images/add-cart-active.png);
+    background: url(/catalog/Tel_shop/images/add-cart-active.png);
 }
 .mini-features{
     font: 14px/18px sans-serif;
@@ -625,13 +630,13 @@ html{
     float: left;
     margin-top: 10px;
     margin-right: 10px;
-    background: url(/images/add-cart-norm.png);
+    background: url(/catalog/Tel_shop/images/add-cart-norm.png);
 }
 .add-cart-style-list:hover{
-    background: url(/images/add-cart-hover.png);
+    background: url(/catalog/Tel_shop/images/add-cart-hover.png);
 }
 .add-cart-style-list:active{
-    background: url(/images/add-cart-active.png);
+    background: url(/catalog/Tel_shop/images/add-cart-active.png);
 }
 .style-price-list{
     font: 15px sans-serif;
@@ -643,7 +648,7 @@ html{
 }
 .style-text-list{
    font: 15px sans-serif;
-   margin: 0; 
+   margin: 0;
 }
 .pstrnav{
     height: 30px;
@@ -664,26 +669,26 @@ html{
     font: bold 14px sans-serif;
     text-align: center;
     color: black;
-    background: url(/images/nav-block-norm.png);
+    background: url(/catalog/Tel_shop/images/nav-block-norm.png);
     padding-top: 5px;
     padding-bottom: 5px;
 }
 .pstrnav a:hover{
-    background: url(/images/nav-block-hover.png);
+    background: url(/catalog/Tel_shop/images/nav-block-hover.png);
 }
 .pstrnav a:active{
-    background: url(/images/nav-block-active.png);
-    color: white; 
+    background: url(/catalog/Tel_shop/images/nav-block-active.png);
+    color: white;
 }
 .pstrnav a.pstr-active{
-    background: url(/images/nav-block-active.png);
-    color: white; 
+    background: url(/catalog/Tel_shop/images/nav-block-active.png);
+    color: white;
 }
 .pstrnav p.nav-point{
     text-align: center;
     font: bold 14px sans-serif;
     margin-top: 8px;
-    margin-bottom: 0px; 
+    margin-bottom: 0px;
 }
 .h2-title{
     font: 25px sans-serif;
@@ -708,7 +713,7 @@ html{
     color: black;
     border-left:1px solid #ABABAB ;
     border-top:1px solid #ABABAB ;
-    
+
     border-right:1px solid #DDDDDD ;
     border-bottom:1px solid #DDDDDD ;
 }
@@ -744,7 +749,7 @@ html{
     color: black;
     border-left:1px solid #ABABAB ;
     border-top:1px solid #ABABAB ;
-    
+
     border-right:1px solid #DDDDDD ;
     border-bottom:1px solid #DDDDDD ;
 }
@@ -770,7 +775,7 @@ html{
     color: black;
     border-left:1px solid #ABABAB ;
     border-top:1px solid #ABABAB ;
-    
+
     border-right:1px solid #DDDDDD ;
     border-bottom:1px solid #DDDDDD ;
 }
@@ -788,21 +793,21 @@ html{
     text-decoration: none;
 }
 #form_submit{
-    background: url(/images/grd_reg_button.png);
+    background: url(/catalog/Tel_shop/images/grd_reg_button.png);
     border: 1px solid #E4E4E4;
     font: bold 13px sans-serif;
-    border-radius:5px ; 
-   -webkit-border-radius:5px ; 
-   -moz-border-radius:5px ;  
+    border-radius:5px ;
+   -webkit-border-radius:5px ;
+   -moz-border-radius:5px ;
     padding-left: 7px;
     padding-right: 7px;
     height: 33px;
     cursor: pointer;
     margin-top: -15px;
-    margin-right: 15px;  
+    margin-right: 15px;
 }
 #form_submit:active{
-    background: url(/images/grd_reg_button_vert.png);
+    background: url(/catalog/Tel_shop/images/grd_reg_button_vert.png);
 }
 .error{
     font: italic 14px sans-serif;
@@ -842,7 +847,7 @@ html{
     display: none;
 }
 .corner{
-    background: url(/images/bulleticon.png);
+    background: url(/catalog/Tel_shop/images/bulleticon.png);
     width: 19px;
     height: 10px;
     margin-left: 175px;
@@ -878,14 +883,14 @@ html{
     padding-left: 5px;
 }
 .pass-show{
-   background: url(/images/open_eye.png) no-repeat;
+   background: url(/catalog/Tel_shop/images/open_eye.png) no-repeat;
    width: 18px;
-   height: 11px; 
+   height: 11px;
 }
 .pass-hide{
-   background: url(/images/eye_closed.png) no-repeat;
+   background: url(/catalog/Tel_shop/images/eye_closed.png) no-repeat;
    width: 20px;
-   height: 10px; 
+   height: 10px;
 }
 #input-email-pass span{
     width: 25px;
@@ -916,23 +921,23 @@ html{
 #button-auth a,#button-remind a{
     margin-right: 10px;
     cursor: pointer;
-    background: url(/images/button-grd.png) repeat-x;
+    background: url(/catalog/Tel_shop/images/button-grd.png) repeat-x;
     font:bold 13px sans-serif;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 10px;
     padding-right: 10px;
     border: 1px solid #E8E8E8;
-    border-radius:5px ; 
-   -webkit-border-radius:5px ; 
-   -moz-border-radius:5px ;  
+    border-radius:5px ;
+   -webkit-border-radius:5px ;
+   -moz-border-radius:5px ;
 }
 
 #button-auth a:hover,#button-remind a:hover{
-    background: url(/images/button-grd-hover.png) repeat-x;
+    background: url(/catalog/Tel_shop/images/button-grd-hover.png) repeat-x;
 }
 #button-auth a:active,#button-remind a:active{
-    background: url(/images/button-grd-active.png) repeat-x;
+    background: url(/catalog/Tel_shop/images/button-grd-active.png) repeat-x;
 }
 .auth-loading{
     margin-right: 30px;
@@ -969,7 +974,7 @@ html{
     width: 150px;
     height: 25px;
     border: 1px solid #DBDBDB;
-    font:15px sans-serif; 
+    font:15px sans-serif;
     padding-left: 5px;
     padding-right: 30px;
 }
@@ -977,11 +982,11 @@ html{
 #block-remind  p#prev-auth{
     font:bold 13px sans-serif;
     text-decoration: underline;
-    width: 10px; 
+    width: 10px;
     margin-left: 10px;
     margin-top: -32px;
     cursor: pointer;
-    position: absolute;  
+    position: absolute;
 }
 #block-remind  p#prev-auth:hover{
     text-decoration: none;
@@ -1020,10 +1025,10 @@ html{
     display: none;
     -moz-box-shadow: 0 0 15px #DBDBDB;
     -width: ;kit-box-shadow: 0 0 15px #DBDBDB;
-     box-shadow: 0 0 15px #DBDBDB;   
+     box-shadow: 0 0 15px #DBDBDB;
 }
 .corner2{
-    background: url(/images/bulleticon.png);
+    background: url(/catalog/Tel_shop/images/bulleticon.png);
     width: 19px;
     height: 10px;
     margin-top: -9px;
@@ -1070,7 +1075,7 @@ html{
  height: 30px;
  width: 350px;
  font: 17px sans-serif;
- margin-left: 200px; 
+ margin-left: 200px;
  border-left: 1px solid #ABABAB;
  border-top: 1px solid #ABABAB;
  border-right: 1px solid #DDDDDD;
@@ -1139,7 +1144,7 @@ background-color: #F1F2F2;
 #block-step{
     height: 70px;
     border-bottom: 1px solid #E0E0E0;
-    
+
 }
 #block-step > p{
     font: 19px sans-serif;
@@ -1150,9 +1155,9 @@ background-color: #F1F2F2;
 }
 #block-step > a{
     position: absolute;
-    border: 1px solid #D98386; 
+    border: 1px solid #D98386;
     font:bold 13px sans-serif;
-    padding-left: 7px;  
+    padding-left: 7px;
     padding-right: 7px;
     padding-top: 4px;
     padding-bottom: 4px;
@@ -1160,10 +1165,10 @@ background-color: #F1F2F2;
     margin-left: 700px;
     text-decoration: none;
     color: white;
-    background-color: #DA2027;  
-    border-radius:5px; 
-    -webkit-border-radius:5px; 
-    -moz-border-radius:5px; 
+    background-color: #DA2027;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
 }
 #name-step{
     height: 30px;
@@ -1182,7 +1187,7 @@ background-color: #F1F2F2;
     color: #EF662B;
     font: bold 14px sans-serif;
     border-bottom: 1px dashed #EF662B;
-    
+
 }
 #header-list-cart{
     height: 30px;
@@ -1227,7 +1232,7 @@ background-color: #F1F2F2;
     height: 125px;
 }
 .title-cart > p{
-   margin-top: 15px; 
+   margin-top: 15px;
 }
 .title-cart > p > a{
    font: 15px sans-serif;
@@ -1245,14 +1250,14 @@ background-color: #F1F2F2;
     width: 32px;
     height: 22px;
     font: 15px sans-serif;
-       border-radius:5px; 
-    -webkit-border-radius:5px; 
-    -moz-border-radius:5px;  
+       border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
 }
 .input-count-style p{
     cursor: pointer;
     font: 15px sans-serif;
-    margin: 1px; 
+    margin: 1px;
 }
 .price-product p{
     margin-left: 15px;
@@ -1270,7 +1275,7 @@ background-color: #F1F2F2;
     margin-top: 50px;
 }
 #bottom-cart-line{
-    background: url(/images/bottom-line.png);
+    background: url(/catalog/Tel_shop/images/bottom-line.png);
     height: 5px;
     width: 790px;
     margin: 0px auto;
@@ -1288,16 +1293,16 @@ background-color: #F1F2F2;
 .button-next > a{
     border: 1px solid #B0C181;
     font:15px sans-serif;
-    color: white;  
-    padding-left: 18px;  
+    color: white;
+    padding-left: 18px;
     padding-right: 18px;
     padding-top: 6px;
     padding-bottom: 6px;
-    text-decoration: none;  
-    background: url(/images/grd-next.png);  
-    border-radius:6px; 
-   -webkit-border-radius:6px; 
-   -moz-border-radius:6px;    
+    text-decoration: none;
+    background: url(/catalog/Tel_shop/images/grd-next.png);
+    border-radius:6px;
+   -webkit-border-radius:6px;
+   -moz-border-radius:6px;
 }
 #clear-cart{
     font: 22px sans-serif;
@@ -1306,10 +1311,10 @@ background-color: #F1F2F2;
 
 #info-radio > li > input{
  margin-top: 7px;
- margin-right: 7px;   
+ margin-right: 7px;
 }
 #info-radio > li{
-font:15px sans-serif;  
+font:15px sans-serif;
 }
 #info-order{
  margin-top: 25px;
@@ -1321,7 +1326,7 @@ font:15px sans-serif;
  height: 30px;
  width: 345px;
  font: 17px sans-serif;
- margin-left: 120px; 
+ margin-left: 120px;
  border-left: 1px solid #ABABAB;
  border-top: 1px solid #ABABAB;
  border-right: 1px solid #DDDDDD;
@@ -1360,25 +1365,25 @@ font:15px sans-serif;
     margin-top: 7px;
 }
 #confirm-button-next{
-    background: url(/images/grd-next.png);
+    background: url(/catalog/Tel_shop/images/grd-next.png);
     border: 1px solid #B0C181;
     font:15px sans-serif;
-    color: white;    
-    border-radius:6px; 
-   -webkit-border-radius:6px; 
-   -moz-border-radius:6px;   
-    padding-left: 18px;  
+    color: white;
+    border-radius:6px;
+   -webkit-border-radius:6px;
+   -moz-border-radius:6px;
+    padding-left: 18px;
     padding-right: 18px;
     padding-top: 6px;
     padding-bottom: 6px;
-    cursor: pointer;   
+    cursor: pointer;
 }
 #list-info{
     width: 807px;
     height: 228px;
     padding-top: 7px;
     margin-top: 15px;
-    background: url(/images/boxshadow.png) no-repeat;
+    background: url(/catalog/Tel_shop/images/boxshadow.png) no-repeat;
 }
 
 #list-info > li{
@@ -1447,7 +1452,7 @@ font:15px sans-serif;
 
 .reviews-and-counts-content > li{
     float: left;
-    margin-left: 10px;    
+    margin-left: 10px;
     margin-top: 3px;
 }
 
@@ -1473,13 +1478,13 @@ font:15px sans-serif;
     height: 29px;
     display: block;
     cursor: pointer;
-    background: url(../images/button-buy-norm.png) no-repeat;
+    background: url(../catalog/Tel_shop/images/button-buy-norm.png) no-repeat;
 }
 #add-cart-view:hover{
-    background: url(../images/button-buy-active.png) no-repeat;
+    background: url(../catalog/Tel_shop/images/button-buy-active.png) no-repeat;
 }
 #add-cart-view:active{
-    background: url(../images/button-buy-click.png) no-repeat;
+    background: url(../catalog/Tel_shop/images/button-buy-click.png) no-repeat;
 }
 #block-img-slide{
     height: 85px;
@@ -1585,12 +1590,12 @@ div.tabs_content table{
 #label-bad{
     position: absolute;
     font: 14px sans-serif;
-    margin-left: -93px;    
+    margin-left: -93px;
 }
 #label-comment{
     position: absolute;
-    font: 14px sans-serif; 
-    margin-left: -106px;     
+    font: 14px sans-serif;
+    margin-left: -106px;
 }
 #reload-img{
     display: none;
@@ -1599,14 +1604,14 @@ div.tabs_content table{
 }
 #button-send-review{
     cursor: pointer;
-    background: url(../images/button-send.png) no-repeat;
+    background: url(../catalog/Tel_shop/images/button-send.png) no-repeat;
     width: 81px;
     height: 31px;
     margin-top: 25px;
     margin-left: 270px;
 }
 #button-send-review:active{
-    background: url(../images/button-send-active.png) no-repeat;
+    background: url(../catalog/Tel_shop/images/button-send-active.png) no-repeat;
 }
 #block-like{
     width: 150px;
@@ -1659,7 +1664,7 @@ div.tabs_content table{
 }
 .random-price{
     margin:0px;
-    font: bold 18px sans-serif;   
+    font: bold 18px sans-serif;
 }
 .random-add-cart{
     width: 90px;
@@ -1667,7 +1672,7 @@ div.tabs_content table{
     margin-top: 10px;
     margin-right: 0px;
     cursor: pointer;
-    background: url(/images/button-pay.png);
+    background: url(/catalog/Tel_shop/images/button-pay.png);
     float: left;
 }
 #block-feedback{
@@ -1683,12 +1688,12 @@ div.tabs_content table{
  height: 30px;
  width: 300px;
  font: 17px sans-serif;
- margin-left: 200px; 
+ margin-left: 200px;
  border-left: 1px solid #ABABAB;
  border-top: 1px solid #ABABAB;
  border-right: 1px solid #DDDDDD;
  border-bottom: 1px solid #DDDDDD;
- padding-left: 5px;    
+ padding-left: 5px;
 }
 #feedback label{
     font: 14px arial;

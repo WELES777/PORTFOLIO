@@ -7,9 +7,9 @@ if ($_POST["submit_enter"]) {
     $login = clear_string($link, $_POST["input_login"]);
     $pass  = clear_string($link, $_POST["input_pass"]);
     if ($login && $pass) {
-        // $pass = md5($pass);
-        // $pass = strrev($pass);
-        // $pass = strtolower("mb03foo51" . $pass . "qj2jjdp9");
+        $pass = md5($pass);
+        $pass = strrev($pass);
+        $pass = strtolower("mb03foo51" . $pass . "qj2jjdp9");
         $result = mysqli_query($link, "SELECT * FROM reg_admin WHERE login = '$login' AND pass = '$pass'");
         if (mysqli_num_rows($result) > 0) {
             $row = mysqli_fetch_array($result);
@@ -33,7 +33,7 @@ if ($_POST["submit_enter"]) {
             $_SESSION['view_admin'] = $row["view_admin"];
             header("Location: index.php");
         } else {
-            $msgerror = "Login, e-mail lub hasło są nieprawidłowe.";
+            $msgerror = "Login, e-mail lub hasło są nieprawidłowe";
         }
     } else {
         $msgerror = "Uzupełnij wszystkie pola!";
